@@ -6,12 +6,8 @@ end
 local dashboard = require("alpha.themes.dashboard")
 dashboard.section.header.val = {
   [[                            ]],
-  [[         𝑭𝒓𝒆Ξ𝒅𝒆𝒏            ]],
   [[                            ]],
-  [[      💠 🚀 🌕 🔥 ❤️       ]],
-  [[                            ]],
-  [[                            ]],
-  [[                            ]],
+  [[           VΞM              ]],
   [[                            ]],
   [[                            ]],
  
@@ -33,7 +29,7 @@ local function footer()
 	-- local fortune = handle:read("*a")
 	-- handle:close()
 	-- return fortune
-	return "𝐚𝐬𝐡𝐞𝐚𝐧𝐧.𝐞𝐭𝐡"
+	return "asheann.eth"
 
 end
 
