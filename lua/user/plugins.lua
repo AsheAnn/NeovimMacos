@@ -48,7 +48,7 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
-  use "akinsho/bufferline.nvim"
+  -- use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
   use "kdheepak/tabline.nvim"
@@ -68,7 +68,8 @@ return packer.startup(function(use)
   use "Mephistophiles/surround.nvim"
   use "nacro90/numb.nvim"
   use "br1anchen/nvim-colorizer.lua"
---  use "folke/todo-comments.nvim"
+  use { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' }
+  --  use "folke/todo-comments.nvim"
   
   use {
   "folke/trouble.nvim",
@@ -89,14 +90,12 @@ return packer.startup(function(use)
 
 
   -- Colorschemes
-  use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
+  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "olimorris/onedarkpro.nvim"
   use 'folke/tokyonight.nvim'
-  use "navarasu/onedark.nvim" 
   use "overcache/NeoSolarized"
   use 'Mofiqul/dracula.nvim'
   use 'Shatur/neovim-ayu'
-  -- use "lunarvim/darkplus.nvim"
   
 
 
@@ -142,10 +141,10 @@ return packer.startup(function(use)
   use "f-person/git-blame.nvim"
 
   -- DAP
-  use "mfussenegger/nvim-dap"
-  use "theHamsta/nvim-dap-virtual-text"
-  use "rcarriga/nvim-dap-ui"
-  use "Pocco81/DAPInstall.nvim"
+  -- use "mfussenegger/nvim-dap"
+  -- use "theHamsta/nvim-dap-virtual-text"
+  -- use "rcarriga/nvim-dap-ui"
+  -- use "Pocco81/DAPInstall.nvim"
 
 
 

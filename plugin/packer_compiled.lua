@@ -74,11 +74,6 @@ _G.packer_plugins = {
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
-  ["DAPInstall.nvim"] = {
-    loaded = true,
-    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/DAPInstall.nvim",
-    url = "https://github.com/Pocco81/DAPInstall.nvim"
-  },
   ["FixCursorHold.nvim"] = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
@@ -98,11 +93,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
-  },
-  ["bufferline.nvim"] = {
-    loaded = true,
-    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -139,10 +129,10 @@ _G.packer_plugins = {
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  colorschemes = {
+  ["code_runner.nvim"] = {
     loaded = true,
-    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/colorschemes",
-    url = "https://github.com/lunarvim/colorschemes"
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/code_runner.nvim",
+    url = "https://github.com/CRAG666/code_runner.nvim"
   },
   ["copilot.vim"] = {
     loaded = true,
@@ -244,21 +234,6 @@ _G.packer_plugins = {
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/br1anchen/nvim-colorizer.lua"
   },
-  ["nvim-dap"] = {
-    loaded = true,
-    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/nvim-dap",
-    url = "https://github.com/mfussenegger/nvim-dap"
-  },
-  ["nvim-dap-ui"] = {
-    loaded = true,
-    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
-    url = "https://github.com/rcarriga/nvim-dap-ui"
-  },
-  ["nvim-dap-virtual-text"] = {
-    loaded = true,
-    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
-    url = "https://github.com/theHamsta/nvim-dap-virtual-text"
-  },
   ["nvim-lsp-installer"] = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
@@ -293,11 +268,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
-  },
-  ["onedark.nvim"] = {
-    loaded = true,
-    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/onedark.nvim",
-    url = "https://github.com/navarasu/onedark.nvim"
   },
   ["onedarkpro.nvim"] = {
     loaded = true,

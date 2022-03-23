@@ -1,5 +1,4 @@
 local opts = { noremap = true, silent = true }
-
 local term_opts = { silent = true }
 
 -- Shorten function name
@@ -26,6 +25,8 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 
+-- Add to one row
+keymap("n", "<C-i>", "o<Esc>k", opts)
 
 
 
@@ -81,7 +82,9 @@ keymap("n", "<C-s>", "<cmd>vsplit<CR>", opts)
 keymap("n", "<C-z>", "<cmd>ZenMode<CR>", opts)
 
 
-
-
+keymap("n", "<leader>r", ":RunCode<CR>", { noremap = true, silent = false })
+keymap("n", "<leader>rf", ":RunFile<CR>", { noremap = true, silent = false })
+keymap("n", "<leader>rp", ":RunProject<CR>", { noremap = true, silent = false })
+keymap("n", "<leader>rc", ":RunClose<CR>", { noremap = true, silent = false })
 
 
