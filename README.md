@@ -1,14 +1,14 @@
-# myNeovim
+# Neovim_Macos 
 
-My neovim config for macos
+My neovim config in macos
 
-#### Quick start 
+### Quick start 
 
 ```shell 
-cd ~/.config/nvim/
-git clone git@github.com:AsheAnn/NeovimMacos.git
+cd ~/.config
+git clone git@github.com:AsheAnn/NeovimMacos.git nvim
 ```
 
 
 execute neovim and type **:PackerSync** to install plugins  
-after that type **:checkhealth** to check neovim install status
+after that restart neovim and type **:checkhealth** to check neovim install status
