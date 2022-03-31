@@ -169,6 +169,11 @@ _G.packer_plugins = {
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/glow.nvim",
     url = "https://github.com/ellisonleao/glow.nvim"
   },
+  ["goyo.vim"] = {
+    loaded = true,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/goyo.vim",
+    url = "https://github.com/junegunn/goyo.vim"
+  },
   ["hop.nvim"] = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/hop.nvim",
@@ -193,6 +198,13 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["markdown-preview.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["minimap.vim"] = {
     loaded = true,
@@ -345,6 +357,11 @@ _G.packer_plugins = {
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
   },
+  ["twilight.nvim"] = {
+    loaded = true,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/twilight.nvim",
+    url = "https://github.com/folke/twilight.nvim"
+  },
   ["vim-bbye"] = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/vim-bbye",
@@ -365,6 +382,11 @@ _G.packer_plugins = {
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/vim-solidity",
     url = "https://github.com/lunarvim/vim-solidity"
   },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
+    url = "https://github.com/mg979/vim-visual-multi"
+  },
   ["which-key.nvim"] = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/which-key.nvim",
@@ -382,6 +404,13 @@ time([[Defining packer_plugins]], false)
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Filetype lazy-loads
+time([[Defining lazy-load filetype autocommands]], true)
+vim.cmd [[au FileType markdown ++once lua require("packer.load")({'markdown-preview.nvim'}, { ft = "markdown" }, _G.packer_plugins)]]
+time([[Defining lazy-load filetype autocommands]], false)
+vim.cmd("augroup END")
 if should_profile then save_profiles() end
 
 end)

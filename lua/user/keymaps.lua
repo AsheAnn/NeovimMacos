@@ -32,10 +32,10 @@ keymap("n", "<C-i>", "o<Esc>k", opts)
 
 
 -- Resize with arrows
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<A-Up>", ":resize -2<CR>", opts)
+keymap("n", "<A-Down>", ":resize +2<CR>", opts)
+keymap("n", "<A-Left>", ":vertical resize +2<CR>", opts)
+keymap("n", "<A-Right>", ":vertical resize -2<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
@@ -76,15 +76,19 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 
 -- MiniMap --
-keymap("n", "<C-A-m>", "<cmd>MiniMap<CR>",opts)
-keymap("n", "<C-A-n>", "<cmd>MiniMapClose<CR>",opts)
-keymap("n", "<C-s>", "<cmd>vsplit<CR>", opts)
+keymap("n", "<C-s>", "<cmd>w<CR>", opts)
 keymap("n", "<C-z>", "<cmd>ZenMode<CR>", opts)
+
+
 
 
 keymap("n", "<leader>r", ":RunCode<CR>", { noremap = true, silent = false })
 keymap("n", "<leader>rf", ":RunFile<CR>", { noremap = true, silent = false })
 keymap("n", "<leader>rp", ":RunProject<CR>", { noremap = true, silent = false })
 keymap("n", "<leader>rc", ":RunClose<CR>", { noremap = true, silent = false })
+
+
+
+
 
 

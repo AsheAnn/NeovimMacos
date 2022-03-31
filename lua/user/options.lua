@@ -8,7 +8,6 @@ local options = {
   hlsearch = true,                         -- highlight all matches on previous search pattern
   ignorecase = true,                       -- ignore case in search patterns
   mouse = "a",                             -- allow the mouse to be used in neovim
-  autochdir = true,
   pumheight = 10,                          -- pop up menu height
   showmode = false,                        -- we don't need to see things like -- INSERT -- anymore
   showtabline = 2,                         -- always show tabs
@@ -44,7 +43,7 @@ vim.g.vim_markdown_new_list_item_indent = 2
 vim.g.glow_border = "rounded"
 vim.g.glow_binary_path = vim.env.HOME .. "/bin"
 
-vim.g.user_emmet_expandabbr_key = '<tab>'
+-- vim.g.user_emmet_expandabbr_key = '<Tab>'
 vim.g.user_emmet_install_global = 0
 vim.cmd[[autocmd FileType html,css EmmetInstall]]
 

@@ -69,8 +69,10 @@ return packer.startup(function(use)
   use "nacro90/numb.nvim"
   use "br1anchen/nvim-colorizer.lua"
   use { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' }
-  --  use "folke/todo-comments.nvim"
-  
+  use "mg979/vim-visual-multi"
+  use "junegunn/goyo.vim"
+  use "folke/twilight.nvim"
+
   use {
   "folke/trouble.nvim",
   requires = "kyazdani42/nvim-web-devicons",
@@ -86,7 +88,13 @@ return packer.startup(function(use)
   -- markdown
   use "godlygeek/tabular"
   use "preservim/vim-markdown"
-  use "ellisonleao/glow.nvim" 
+  use "ellisonleao/glow.nvim"
+  use {
+
+    "iamcco/markdown-preview.nvim",
+    run = "cd app && npm install",
+    ft = "markdown",
+  }
 
 
   -- Colorschemes
@@ -97,8 +105,6 @@ return packer.startup(function(use)
   use 'Mofiqul/dracula.nvim'
   use 'Shatur/neovim-ayu'
   
-
-
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -135,7 +141,6 @@ return packer.startup(function(use)
   use "JoosepAlviste/nvim-ts-context-commentstring"
   use "windwp/nvim-ts-autotag"
 
-
   -- Git
   use "lewis6991/gitsigns.nvim"
   use "f-person/git-blame.nvim"
@@ -145,12 +150,6 @@ return packer.startup(function(use)
   -- use "theHamsta/nvim-dap-virtual-text"
   -- use "rcarriga/nvim-dap-ui"
   -- use "Pocco81/DAPInstall.nvim"
-
-
-
-
-
-
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
