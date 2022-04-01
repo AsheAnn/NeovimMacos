@@ -5,14 +5,15 @@ end
 
 code_runner.setup({
 	term = {
-    mode = "",
+		mode = "",
 		position = "belowright",
-		size = 8
-		},
-  filetype = {
+		size = 6,
+	},
+	filetype = {
 		javascript = "node",
+		javascriptreact = "node",
 		python = "python3",
 		typescript = "deno run",
-    ruby = "ruby"
-  }
+		ruby = "ruby",
+	},
 })

@@ -1,10 +1,10 @@
 return {
-  cmd = { "emmet-ls", "--stdio" },
+  cmd = { "ls_emmet", "--stdio" },
   filetypes = {
     "html",
     "css",
     "scss",
-   -- "javascript",
+    "javascript",
     "javascriptreact",
     "typescript",
     "typescriptreact",
