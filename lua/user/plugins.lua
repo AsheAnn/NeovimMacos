@@ -71,6 +71,7 @@ return packer.startup(function(use)
   use "junegunn/goyo.vim"
   use "folke/twilight.nvim"
 
+
   use {
   "folke/trouble.nvim",
   requires = "kyazdani42/nvim-web-devicons",
@@ -135,6 +136,9 @@ return packer.startup(function(use)
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  use {'dsznajder/vscode-es7-javascript-react-snippets',
+  run = 'yarn install --frozen-lockfile && yarn compile'
+  }
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
