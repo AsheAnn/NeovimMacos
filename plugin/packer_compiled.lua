@@ -134,20 +134,10 @@ _G.packer_plugins = {
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/code_runner.nvim",
     url = "https://github.com/CRAG666/code_runner.nvim"
   },
-  ["copilot.vim"] = {
-    loaded = true,
-    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/copilot.vim",
-    url = "https://github.com/github/copilot.vim"
-  },
   ["dracula.nvim"] = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/dracula.nvim",
     url = "https://github.com/Mofiqul/dracula.nvim"
-  },
-  ["emmet-vim"] = {
-    loaded = true,
-    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/emmet-vim",
-    url = "https://github.com/mattn/emmet-vim"
   },
   ["friendly-snippets"] = {
     loaded = true,
@@ -193,6 +183,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
     url = "https://github.com/ray-x/lsp_signature.nvim"
+  },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    url = "https://github.com/glepnir/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,

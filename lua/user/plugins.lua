@@ -63,7 +63,6 @@ return packer.startup(function(use)
   use "phaazon/hop.nvim"
   use "lunarvim/vim-solidity"
   use "wfxr/minimap.vim"
-  use "mattn/emmet-vim"
   use "Mephistophiles/surround.nvim"
   use "nacro90/numb.nvim"
   use "br1anchen/nvim-colorizer.lua"
@@ -95,17 +94,15 @@ return packer.startup(function(use)
     ft = "markdown",
   }
 
-
-  -- Colorschemes
-  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
+ -- Colorschemes
   use "olimorris/onedarkpro.nvim"
   use 'folke/tokyonight.nvim'
   use "overcache/NeoSolarized"
   use 'Mofiqul/dracula.nvim'
   use 'Shatur/neovim-ayu'
   use "lifepillar/vim-solarized8"
-  
-  -- cmp plugins
+
+ -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
@@ -125,8 +122,8 @@ return packer.startup(function(use)
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters 
   use "prettier/vim-prettier"
+  use "glepnir/lspsaga.nvim"
   use "b0o/schemastore.nvim"
-  use "github/copilot.vim"
   use "ray-x/lsp_signature.nvim"
 
   -- Telescope

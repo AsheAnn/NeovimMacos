@@ -1,4 +1,5 @@
 local status_ok, lsp_installer = pcall(require, "nvim-lsp-installer")
+local tsserver                 = require("user.lsp.settings.tsserver")
 if not status_ok then
 	return
 end
@@ -41,6 +42,11 @@ lsp_installer.on_server_ready(function(server)
   if server.name == "tailwindcss" then
     local tailwindcss_opts = require "user.lsp.settings.tailwindcss"
     opts = vim.tbl_deep_extend("force", tailwindcss_opts, opts)
+  end
+    
+  if server.name == "tsserver" then
+    local tsserver_opts = require "user.lsp.settings.tsserver"
+    opts = vim.tbl_deep_extend("force", tsserver_opts, opts)
   end
 
 	-- This setup() function is exactly the same as lspconfig's setup function.

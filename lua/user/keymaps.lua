@@ -25,7 +25,7 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 
--- Add to one row
+-- Add to next row
 keymap("n", "<C-i>", "o<Esc>k", opts)
 
 
@@ -86,9 +86,6 @@ keymap("n", "<leader>r", ":RunCode<CR>", { noremap = true, silent = false })
 keymap("n", "<leader>rf", ":RunFile<CR>", { noremap = true, silent = false })
 keymap("n", "<leader>rp", ":RunProject<CR>", { noremap = true, silent = false })
 keymap("n", "<leader>rc", ":RunClose<CR>", { noremap = true, silent = false })
-
-
-
 
 
 
