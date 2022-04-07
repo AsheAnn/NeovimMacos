@@ -43,12 +43,7 @@ vim.g.vim_markdown_new_list_item_indent = 2
 vim.g.glow_border = "rounded"
 vim.g.glow_binary_path = vim.env.HOME .. "/bin"
 
-vim.g.user_emmet_expandabbr_key = '<Tab>'
-vim.g.user_emmet_install_global = 0
-vim.cmd[[autocmd FileType html,css,javascripts, javascriptreact EmmetInstall]]
-
 vim.cmd[[autocmd FileType javascript set filetype=javascriptreact]]
-
 
 vim.opt.shortmess:append "c"
 

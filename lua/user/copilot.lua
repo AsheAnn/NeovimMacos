@@ -1,5 +1,5 @@
 vim.g.copilot_filetypes = {
-  ["*"] = true,
+  ["*"] = false,
 }
 
 vim.cmd [[
