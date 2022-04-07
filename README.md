@@ -8,7 +8,9 @@ My neovim config
 
 
 ```shell 
-cd ~/.config
+git clone git@github.com:AsheAnn/myNeovim-Public.git ~/.config/nvim
+```
+```shell 
 git clone git@github.com:AsheAnn/myNeovim-Public.git nvim
 ```
 
@@ -19,7 +21,9 @@ after that restart neovim and type **:checkhealth** to check neovim install stat
 
 
 ```shell 
-cd ~/.config
+git clone git@github.com:AsheAnn/myNeovim-Public.git ~/.config/nvim
+```
+```shell 
 git clone git@github.com:AsheAnn/myNeovim-Public.git nvim
 ```
 下載後執行 neovim 在命令模式執行 **:PackerSync** 安裝套件  
