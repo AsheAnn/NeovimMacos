@@ -102,6 +102,9 @@ return packer.startup(function(use)
   use 'Mofiqul/dracula.nvim'
   use 'Shatur/neovim-ayu'
   use "lifepillar/vim-solarized8"
+  use "LunarVim/Colorschemes"
+
+
 
  -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
