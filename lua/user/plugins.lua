@@ -66,7 +66,7 @@ return packer.startup(function(use)
   use "Mephistophiles/surround.nvim"
   use "nacro90/numb.nvim"
   use "br1anchen/nvim-colorizer.lua"
-  use { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' }
+  use { "CRAG666/code_runner.nvim", requires = "nvim-lua/plenary.nvim" }
   use "mg979/vim-visual-multi"
   use "junegunn/goyo.vim"
   use "folke/twilight.nvim"
@@ -97,10 +97,10 @@ return packer.startup(function(use)
 
  -- Colorschemes
   use "olimorris/onedarkpro.nvim"
-  use 'folke/tokyonight.nvim'
+  use "folke/tokyonight.nvim"
   use "overcache/NeoSolarized"
-  use 'Mofiqul/dracula.nvim'
-  use 'Shatur/neovim-ayu'
+  use "Mofiqul/dracula.nvim"
+  use "Shatur/neovim-ayu"
   use "lifepillar/vim-solarized8"
   use "LunarVim/Colorschemes"
 
@@ -139,8 +139,8 @@ return packer.startup(function(use)
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
-  use {'dsznajder/vscode-es7-javascript-react-snippets',
-  run = 'yarn install --frozen-lockfile && yarn compile'
+  use {"dsznajder/vscode-es7-javascript-react-snippets",
+  run = "yarn install --frozen-lockfile && yarn compile"
   }
 
   -- LSP
