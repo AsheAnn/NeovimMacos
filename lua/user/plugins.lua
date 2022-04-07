@@ -70,7 +70,7 @@ return packer.startup(function(use)
   use "mg979/vim-visual-multi"
   use "junegunn/goyo.vim"
   use "folke/twilight.nvim"
-
+  use "mechatroner/rainbow_csv"
 
   use {
   "folke/trouble.nvim",
