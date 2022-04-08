@@ -68,8 +68,8 @@ return packer.startup(function(use)
   use "br1anchen/nvim-colorizer.lua"
   use { "CRAG666/code_runner.nvim", requires = "nvim-lua/plenary.nvim" }
   use "mg979/vim-visual-multi"
-  use "junegunn/goyo.vim"
-  use "folke/twilight.nvim"
+  -- use "junegunn/goyo.vim"
+  -- use "folke/twilight.nvim"
   use "mechatroner/rainbow_csv"
 
   use {
