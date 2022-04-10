@@ -44,6 +44,8 @@ vim.g.glow_border = "rounded"
 vim.g.glow_binary_path = vim.env.HOME .. "/bin"
 
 vim.cmd[[autocmd FileType javascript set filetype=javascriptreact]]
+vim.cmd[[autocmd FileType eruby set filetype=html]]
+
 
 vim.opt.shortmess:append "c"
 

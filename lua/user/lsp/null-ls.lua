@@ -14,15 +14,15 @@ null_ls.setup({
 		formatting.prettier.with({
       extra_filetypes = {
         "toml",
-        "solidity"
+        "solidity",
       },
    -- extra_args = { "--single-quote", "--jsx-single-quote" },
     }),
-		formatting.eslint.with({filetypes = {"javascript", "html", "json", "css"}}),
+		formatting.eslint.with({filetypes = {"javascript", "html", "json", "css" }}),
     formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
 		formatting.yapf,
-    diagnostics.flake8, 
+    diagnostics.flake8,
   --		diagnostics.eslint.with({filetypes = {"javascript", "html", "css", "json"}}),
 
   },
