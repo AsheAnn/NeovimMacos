@@ -71,6 +71,7 @@ return packer.startup(function(use)
   -- use "junegunn/goyo.vim"
   -- use "folke/twilight.nvim"
   use "mechatroner/rainbow_csv"
+  use "helix-editor/helix"
 
   use {
   "folke/trouble.nvim",
@@ -168,6 +169,7 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
+  use "kdheepak/lazygit.nvim"
   use "f-person/git-blame.nvim"
 
   -- DAP

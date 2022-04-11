@@ -175,6 +175,11 @@ _G.packer_plugins = {
     path = "/home/anna/.local/share/nvim/site/pack/packer/start/glow.nvim",
     url = "https://github.com/ellisonleao/glow.nvim"
   },
+  helix = {
+    loaded = true,
+    path = "/home/anna/.local/share/nvim/site/pack/packer/start/helix",
+    url = "https://github.com/helix-editor/helix"
+  },
   ["hop.nvim"] = {
     loaded = true,
     path = "/home/anna/.local/share/nvim/site/pack/packer/start/hop.nvim",
@@ -189,6 +194,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/anna/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["lazygit.nvim"] = {
+    loaded = true,
+    path = "/home/anna/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
+    url = "https://github.com/kdheepak/lazygit.nvim"
   },
   ["lsp_signature.nvim"] = {
     loaded = true,
