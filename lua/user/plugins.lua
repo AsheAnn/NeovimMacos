@@ -73,7 +73,7 @@ return packer.startup(function(use)
   use "mechatroner/rainbow_csv"
   use {"Shougo/defx.nvim",
         run = ':UpdateRemotePlugins',
-        config = function() vim.cmd("source $HOME/.config/nvim/vimscript/defx.vim") end,
+        -- config = function() vim.cmd("source $HOME/.config/nvim/vimscript/defx.vim") end,
         requires = {
             {'kristijanhusak/defx-icons'},
             {'kristijanhusak/defx-git'}
