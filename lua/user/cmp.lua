@@ -113,15 +113,17 @@ cmp.setup {
     { name = "buffer" },
     { name = "cmp_tabnine" },
     { name = "path" },
-    { name = "emoji" },
+    -- { name = "emoji" },
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
     select = false,
   },
   -- documentation = true,
+  window = {
   documentation = {
   	border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+  },
   },
   experimental = {
     ghost_text = true,

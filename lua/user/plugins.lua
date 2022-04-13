@@ -71,24 +71,30 @@ return packer.startup(function(use)
   -- use "junegunn/goyo.vim"
   -- use "folke/twilight.nvim"
   use "mechatroner/rainbow_csv"
-  use "helix-editor/helix"
+  use {"Shougo/defx.nvim",
+        run = ':UpdateRemotePlugins',
+        config = function() vim.cmd("source $HOME/.config/nvim/vimscript/defx.vim") end,
+        requires = {
+            {'kristijanhusak/defx-icons'},
+            {'kristijanhusak/defx-git'}
+        }
+      }
 
   use {
-  "folke/trouble.nvim",
-  requires = "kyazdani42/nvim-web-devicons",
-  config = function()
-    require("trouble").setup {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    }
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function()
+      require("trouble").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
   end
 }
 
   -- markdown
   use "godlygeek/tabular"
   use "preservim/vim-markdown"
-  use "ellisonleao/glow.nvim"
   use {
 
     "iamcco/markdown-preview.nvim",
@@ -104,7 +110,8 @@ return packer.startup(function(use)
   use "Shatur/neovim-ayu"
   use "lifepillar/vim-solarized8"
   use "LunarVim/Colorschemes"
-
+  use "Mofiqul/adwaita.nvim"
+  use "rose-pine/neovim"
 
 
  -- cmp plugins
@@ -150,7 +157,6 @@ return packer.startup(function(use)
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters 
   use "prettier/vim-prettier"
-  use "glepnir/lspsaga.nvim"
   use "b0o/schemastore.nvim"
   use "ray-x/lsp_signature.nvim"
   use "github/copilot.vim"
@@ -169,7 +175,6 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
-  use "kdheepak/lazygit.nvim"
   use "f-person/git-blame.nvim"
 
   -- DAP

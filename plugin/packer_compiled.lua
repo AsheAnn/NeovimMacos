@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/NeoSolarized",
     url = "https://github.com/overcache/NeoSolarized"
   },
+  ["adwaita.nvim"] = {
+    loaded = true,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/adwaita.nvim",
+    url = "https://github.com/Mofiqul/adwaita.nvim"
+  },
   ["alpha-nvim"] = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/alpha-nvim",
@@ -130,7 +135,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-path"
   },
   ["cmp-tabnine"] = {
-    config = { "\27LJ\2\nº\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\24snippet_placeholder\a..\tsort\2\20max_num_results\3\20\14max_lines\3è\a\27run_on_every_keystroke\2\nsetup\23cmp_tabnine.config\frequire\0" },
+    config = { "\27LJ\2\nº\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\tsort\2\24snippet_placeholder\a..\27run_on_every_keystroke\2\20max_num_results\3\20\14max_lines\3è\a\nsetup\23cmp_tabnine.config\frequire\0" },
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/cmp-tabnine",
     url = "https://github.com/tzachar/cmp-tabnine"
@@ -149,6 +154,22 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
+  },
+  ["defx-git"] = {
+    loaded = true,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/defx-git",
+    url = "https://github.com/kristijanhusak/defx-git"
+  },
+  ["defx-icons"] = {
+    loaded = true,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/defx-icons",
+    url = "https://github.com/kristijanhusak/defx-icons"
+  },
+  ["defx.nvim"] = {
+    config = { "\27LJ\2\nP\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0001source $HOME/.config/nvim/vimscript/defx.vim\bcmd\bvim\0" },
+    loaded = true,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/defx.nvim",
+    url = "https://github.com/Shougo/defx.nvim"
   },
   ["dracula.nvim"] = {
     loaded = true,
@@ -170,16 +191,6 @@ _G.packer_plugins = {
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["glow.nvim"] = {
-    loaded = true,
-    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/glow.nvim",
-    url = "https://github.com/ellisonleao/glow.nvim"
-  },
-  helix = {
-    loaded = true,
-    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/helix",
-    url = "https://github.com/helix-editor/helix"
-  },
   ["hop.nvim"] = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/hop.nvim",
@@ -195,20 +206,10 @@ _G.packer_plugins = {
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
-  ["lazygit.nvim"] = {
-    loaded = true,
-    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
-    url = "https://github.com/kdheepak/lazygit.nvim"
-  },
   ["lsp_signature.nvim"] = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
     url = "https://github.com/ray-x/lsp_signature.nvim"
-  },
-  ["lspsaga.nvim"] = {
-    loaded = true,
-    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
-    url = "https://github.com/glepnir/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -226,6 +227,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/minimap.vim",
     url = "https://github.com/wfxr/minimap.vim"
+  },
+  neovim = {
+    loaded = true,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/neovim",
+    url = "https://github.com/rose-pine/neovim"
   },
   ["neovim-ayu"] = {
     loaded = true,
@@ -372,12 +378,6 @@ _G.packer_plugins = {
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
-  ["trouble.nvim"] = {
-    config = { "\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0" },
-    loaded = true,
-    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/trouble.nvim",
-    url = "https://github.com/folke/trouble.nvim"
-  },
   ["vim-bbye"] = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/vim-bbye",
@@ -428,12 +428,12 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: cmp-tabnine
 time([[Config for cmp-tabnine]], true)
-try_loadstring("\27LJ\2\nº\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\24snippet_placeholder\a..\tsort\2\20max_num_results\3\20\14max_lines\3è\a\27run_on_every_keystroke\2\nsetup\23cmp_tabnine.config\frequire\0", "config", "cmp-tabnine")
+try_loadstring("\27LJ\2\nº\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\tsort\2\24snippet_placeholder\a..\27run_on_every_keystroke\2\20max_num_results\3\20\14max_lines\3è\a\nsetup\23cmp_tabnine.config\frequire\0", "config", "cmp-tabnine")
 time([[Config for cmp-tabnine]], false)
--- Config for: trouble.nvim
-time([[Config for trouble.nvim]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
-time([[Config for trouble.nvim]], false)
+-- Config for: defx.nvim
+time([[Config for defx.nvim]], true)
+try_loadstring("\27LJ\2\nP\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0001source $HOME/.config/nvim/vimscript/defx.vim\bcmd\bvim\0", "config", "defx.nvim")
+time([[Config for defx.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
