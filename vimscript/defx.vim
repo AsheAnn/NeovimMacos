@@ -9,7 +9,7 @@ function! s:setup_defx() abort
   silent! call defx#custom#option('_', {
       \ 'show_ignored_files': 0,
       \ 'buffer_name': 'defxplorer',
-      \ 'columns': 'git:indent:icon:space:icons:space:filename',
+      \ 'columns': 'git:indent:icon:space:icons:space:filename:size',  
       \ 'resume': 1,
       \ })
 
@@ -92,7 +92,7 @@ endfunction
 "      \ -columns=indent:mark:icon:icons:filename:git:size
 "      \ -buffer-name=tab`tabpagenr()`<CR>
 nnoremap <silent>sf :<C-u>Defx -listed -resume
-      \ -columns=indent:mark:icon:icons:filename:git:size
+      \ -columns=indent:mark:space:icon:space:icons:space:filename:git:size
       \ -buffer-name=tab`tabpagenr()`
       \ `expand('%:p:h')` -search=`expand('%:p')`<CR>
 nnoremap <silent>fi :<C-u>Defx -new `expand('%:p:h')` -search=`expand('%:p')`<CR>
@@ -123,7 +123,7 @@ function! s:defx_mappings() abort
   \ defx#do_action('new_multiple_files')
   nnoremap <silent><buffer><expr> C
   \ defx#do_action('toggle_columns',
-  \                'mark:indent:icon:filename:type:size:time')
+  \                'mark:indent:icon:space:filename:type:size:time')
   nnoremap <silent><buffer><expr> S
   \ defx#do_action('toggle_sort', 'time')
   nnoremap <silent><buffer><expr> d
