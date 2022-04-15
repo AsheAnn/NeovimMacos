@@ -79,7 +79,6 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<C-s>", "<cmd>w<CR>", opts)
 keymap("n", "<C-z>", "<cmd>ZenMode<CR>", opts)
 
-keymap("n", "C-,", ":Copilot_disable<CR>", opts)
 
 
 keymap("n", "<leader>r", ":RunCode<CR>", { noremap = true, silent = false })

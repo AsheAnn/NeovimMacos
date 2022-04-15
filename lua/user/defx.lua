@@ -6,8 +6,8 @@ local opts = { noremap = true, silent = true }
 
 
 
-keymap('n', 'fs', ":<C-u>Defx -listed -resume -columns=indent:mark:space:icon:space:icons:space:filename:git:size -buffer-name=tab`tabpagenr()` -search=`expand('%:p')` `expand('%:p:h')`<CR>", opts)
-keymap('n', 'sf', ":<C-u>Defx -new -columns=indent:mark:space:icon:space:icons:space:filename:git:size -buffer-name=tab`tabpagenr()` -search=`expand('%:p')` `expand('%:p:h')`<CR>", opts)
+keymap('n', 'sf', ":<C-u>Defx -listed -resume -columns=indent:mark:space:icon:space:icons:space:filename:git:size -buffer-name=tab`tabpagenr()` -search=`expand('%:p')` `expand('%:p:h')`<CR>", opts)
+keymap('n', 'fi', ":<C-u>Defx -new -columns=indent:mark:space:icon:space:icons:space:filename:git:size -buffer-name=tab`tabpagenr()` -search=`expand('%:p')` `expand('%:p:h')`<CR>", opts)
 
 
 function DefxSettings()
@@ -16,7 +16,6 @@ function DefxSettings()
   bufkeymap(0, 'n', 'm', 'defx#do_action("move")', opt)
   bufkeymap(0, 'n', 'p', 'defx#do_action("paste")', opt)
   bufkeymap(0, 'n', 'l', 'defx#do_action("open")', opt)
-  bufkeymap(0, 'n', 'L', 'defx#do_action("open", "tabnew")', opt)
   bufkeymap(0, 'n', 'E', 'defx#do_action("open", "vsplit")', opt)
   bufkeymap(0, 'n', 'P', 'defx#do_action("open", "pedit")', opt)
   bufkeymap(0, 'n', 'J', 'defx#do_action("open_or_close_tree")', opt)
@@ -79,4 +78,4 @@ vim.fn['defx#custom#option']('_', {
 
 
 vim.cmd('autocmd FileType defx call v:lua.DefxSettings()')
-vim.cmd('autocmd VimEnter * execute "Defx -new -columns=indent:mark:space:icon:space:icons:space:filename:git:size"')
+-- vim.cmd('autocmd VimEnter * execute "Defx -new -columns=indent:mark:space:icon:space:icons:space:filename:git:size"')

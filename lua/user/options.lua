@@ -37,15 +37,15 @@ local options = {
   virtualedit = "block",
 }
 
-vim.g.loaded_netrw = 1 
-vim.g.loaded_netrwPlugin = 1
+-- vim.g.loaded_netrw = 1 
+-- vim.g.loaded_netrwPlugin = 1
 
 vim.g.vim_markdown_new_list_item_indent = 2
 vim.g.glow_border = "rounded"
 vim.g.glow_binary_path = vim.env.HOME .. "/bin"
 
 vim.cmd [[autocmd FileType javascript set filetype=javascriptreact]]
-vim.cmd [[autocmd FileType eruby set filetype=html]]
+-- vim.cmd [[autocmd FileType eruby set filetype=html]]
 
 
 vim.opt.shortmess:append "c"
