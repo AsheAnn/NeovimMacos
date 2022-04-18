@@ -47,10 +47,11 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use {"numToStr/Comment.nvim", commit = "0aaea32"} -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
-  use "kyazdani42/nvim-tree.lua"
+  use {"kyazdani42/nvim-tree.lua", commit = "9c272b9"}
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
-  use "kdheepak/tabline.nvim"
+  use {"kdheepak/tabline.nvim", commit = "57784ac"}
+  use "akinsho/bufferline.nvim"
   use "akinsho/toggleterm.nvim"
   use "ahmedkhalf/project.nvim"
   use "lewis6991/impatient.nvim"
@@ -176,8 +177,10 @@ return packer.startup(function(use)
   use "lewis6991/gitsigns.nvim"
   use "f-person/git-blame.nvim"
   
-  use "tpope/vim-dadbod"
-  use "kristijanhusak/vim-dadbod-ui"
+  -- Database
+  -- use "tpope/vim-dadbod"
+  -- use "kristijanhusak/vim-dadbod-ui"
+
   -- DAP
   -- use "mfussenegger/nvim-dap"
   -- use "theHamsta/nvim-dap-virtual-text"
