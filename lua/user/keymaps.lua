@@ -73,18 +73,11 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
-
-
--- MiniMap --
 keymap("n", "<C-s>", "<cmd>w<CR>", opts)
 keymap("n", "<C-z>", "<cmd>ZenMode<CR>", opts)
 
-
-
 keymap("n", "<leader>r", ":RunCode<CR>", { noremap = true, silent = false })
-keymap("n", "<leader>rf", ":RunFile<CR>", { noremap = true, silent = false })
-keymap("n", "<leader>rp", ":RunProject<CR>", { noremap = true, silent = false })
-keymap("n", "<leader>rc", ":RunClose<CR>", { noremap = true, silent = false })
-
+-- keymap("n", "<leader>o", ":set background=light<CR>", opts)
+-- keymap("n", "<leader>oo", ":set background=dark<CR>", opts)
 
 

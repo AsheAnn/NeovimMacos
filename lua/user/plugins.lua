@@ -107,7 +107,7 @@ return packer.startup(function(use)
   use "folke/tokyonight.nvim"
   use "overcache/NeoSolarized"
   use "Mofiqul/dracula.nvim"
-  use "Shatur/neovim-ayu"
+  use {"Shatur/neovim-ayu", commit = "88bee21"}
   use "lifepillar/vim-solarized8"
   use "LunarVim/Colorschemes"
   use "Mofiqul/adwaita.nvim"

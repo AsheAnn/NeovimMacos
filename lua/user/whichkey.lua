@@ -181,9 +181,16 @@ local mappings = {
     h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
     v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
   },
+
   r = {
     name = "RunCode",
   },
+  
+  o = {
+    name = "background_color",
+    l = { "<cmd>set background=light<CR>", "light"},
+    d = { "<cmd>set background=dark<CR>", "dark"},
+  }
 }
 
 which_key.setup(setup)
