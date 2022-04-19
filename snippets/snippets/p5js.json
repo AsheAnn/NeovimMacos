@@ -1,0 +1,179 @@
+{
+    "p5.js Setup": {
+      "prefix": "p5-setup",
+      "body": [
+          "function setup() {",
+          "    createCanvas(400, 400);",
+          "}"
+      ],
+      "description": "Setup function for p5.js"
+    },
+    "p5.js Draw": {
+        "prefix": "p5-draw",
+        "body": [
+            "function draw() {",
+            "    background(220);",
+            "}"
+        ],
+        "description": "Draw functions for p5.js"
+    },
+    "p5.js Init": {
+        "prefix": "p5-init",
+        "body": [
+            "function setup() {",
+            "    createCanvas(400, 400);",
+            "}",
+            "function draw() {",
+            "    background(220);",
+            "}"
+        ],
+        "description": "Init functions for p5.js"
+    },
+    "p5.js white Color": {
+        "prefix": "p5-white",
+        "body": "255, 255, 255",
+        "description": "White rgb color for p5.js"
+    },
+    "p5.js black Color": {
+        "prefix": "p5-black",
+        "body": "0, 0, 0",
+        "description": "Black rgb color for p5.js"
+    },
+    "p5.js red Color": {
+        "prefix": "p5-red",
+        "body": "255, 0, 0",
+        "description": "Red rgb color for p5.js"
+    },
+    "p5.js green Color": {
+        "prefix": "p5-green",
+        "body": "0, 255, 0",
+        "description": "Green rgb color for p5.js"
+    },
+    "p5.js blue Color": {
+        "prefix": "p5-blue",
+        "body": "0, 0, 255",
+        "description": "Blue rgb color for p5.js"
+    },
+    "p5.js dark blue Color": {
+        "prefix": "p5-blue-dark",
+        "body": "0, 0, 139",
+        "description": "Dark blue rgb color for p5.js"
+    },
+    "p5.js purple Color": {
+        "prefix": "p5-purple",
+        "body": "191, 64, 191",
+        "description": "Purple rgb color for p5.js"
+    },
+    "p5.js orange Color": {
+        "prefix": "p5-orange",
+        "body": "255, 215, 0",
+        "description": "Orange rgb color for p5.js"
+    },
+    "p5.js yellow Color": {
+        "prefix": "p5-yellow",
+        "body": "255, 255, 0",
+        "description": "Yellow rgb color for p5.js"
+    },
+    "p5.js magenta Color": {
+        "prefix": "p5-magenta",
+        "body": "255, 0, 255",
+        "description": "Magenta rgb color for p5.js"
+    },
+    "p5.js pink Color": {
+        "prefix": "p5-pink",
+        "body": "255, 105, 180",
+        "description": "Pink rgb color for p5.js"
+    },
+    "p5.js brown Color": {
+        "prefix": "p5-brown",
+        "body": "139, 69, 19",
+        "description": "Brown rgb color for p5.js"
+    },
+    "p5.js gray Color": {
+        "prefix": "p5-gray",
+        "body": "112, 128, 144",
+        "description": "Gray rgb color for p5.js"
+    },
+    "p5.js aqua Color": {
+        "prefix": "p5-aqua",
+        "body": "0, 255, 255",
+        "description": "Aqua rgb color for p5.js"
+    },
+    "p5.js silver Color": {
+        "prefix": "p5-silver",
+        "body": "192, 192, 192",
+        "description": "Silver rgb color for p5.js"
+    },
+    "p5.js Flower": {
+        "prefix": "p5-flower",
+        "body": [
+            "noStroke();",
+            "for (let i = 0; i < 10; i ++) {",
+            "   ellipse(0, 30, 20, 80);",
+            "   rotate(PI/5);",
+            "};"
+        ],
+        "description": "Simple flower loop for p5.js"
+    },
+    "p5.js Circle": {
+        "prefix": "p5-circle",
+        "body": [
+            "fill(255);",
+            "circle(100, 100, 100);"
+        ],
+        "description": "Simple circle for p5.js"
+    },
+    "p5.js Square": {
+        "prefix": "p5-circle",
+        "body": [
+            "fill(255);",
+            "square(50, 50, 200);"
+        ],
+        "description": "Simple square for p5.js"
+    },
+    "p5.js Polygon": {
+        "prefix": "p5-polygon",
+        "body": [
+            "function polygon(x, y, radius, sides = 3, angle = 0) {",
+            "   beginShape();",
+            "   for (let i = 0; i < sides; i++) {",
+            "       const a = angle + TWO_PI * (i / sides);",
+            "       let sx = x + cos(a) * radius;",
+            "       let sy = y + sin(a) * radius;",
+            "       vertex(sx, sy);",
+            "   };",
+            "   endShape(CLOSE);",
+            "};"
+        ],
+        "description": "Function to draw polygons in p5.js"
+    },
+    "p5.js Segment": {
+        "prefix": "p5-segment",
+        "body": [
+            "function segment(x, y, length, angle = 0) {",
+            "   const r = length / 2;",
+            "   const u = Math.cos(angle);",
+            "   const v = Math.sin(angle);",
+            "   line(x - u * r, y - v * r, x + u * r, y + v * r);",
+            "};"
+        ],
+        "description": "Function to draw line segments in p5.js"
+    },
+    "p5.js Draw Grid": {
+        "prefix": "p5-grid",
+        "body": [
+            "function drawGrid(sizeX, sizeY) {",
+            "   stroke(200);",
+            "   fill(120);",
+            "   const spaceX = width/sizeX",
+            "   const spaceY = height/sizeY",
+            "   for (let x=0; x < width; x+=spaceX) {",
+            "       line(x, 0, x, height);",
+            "   };",
+            "   for (let y=0; y < width; y+=sizeY) {",
+            "       line(0, y, width, y);",
+            "   };",
+            "};"
+        ]
+    }
+}

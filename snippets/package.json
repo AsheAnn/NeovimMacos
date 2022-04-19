@@ -31,6 +31,10 @@
         "path": "./snippets/html.json"
       },
       {
+        "language": "html",
+        "path": "./snippets/p5jshtml.json"
+      },
+      {
         "language": [
           "css",
           "scss",
@@ -48,6 +52,10 @@
           "svelte"
         ],
         "path": "./snippets/javascript/javascript.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/p5js.json"
       },
       {
         "language": [
