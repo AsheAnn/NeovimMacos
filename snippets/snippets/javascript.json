@@ -1,0 +1,13 @@
+{
+  "export class": {
+    "prefix": "edce",
+    "body": [
+      "export default class extends \t$1 {",
+      "  connect() {",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "export class"
+  }
+}

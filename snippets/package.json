@@ -51,7 +51,7 @@
           "vue",
           "svelte"
         ],
-        "path": "./snippets/javascript/javascript.json"
+        "path": "./snippets/javascript.json"
       },
       {
         "language": "javascript",
