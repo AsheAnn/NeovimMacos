@@ -1,6 +1,7 @@
 local status, lualine = pcall(require, "lualine")
 if (not status) then return end
 
+
 lualine.setup {
   options = {
     icons_enabled = true,
@@ -37,7 +38,9 @@ lualine.setup {
     lualine_y = {},
     lualine_z = {}
   },
-  tabline = {},
+  tabline = {
+    lualine_a = {'buffers'},
+  },
   extensions = {'fugitive'}
 }
 
