@@ -47,7 +47,7 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use {"numToStr/Comment.nvim", commit = "0aaea32"} -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
-  use {"kyazdani42/nvim-tree.lua", commit = "9c272b9"}
+  use "kyazdani42/nvim-tree.lua"
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
   use {"kdheepak/tabline.nvim", commit = "57784ac"}
@@ -63,7 +63,7 @@ return packer.startup(function(use)
   use "luukvbaal/stabilize.nvim"
   use "phaazon/hop.nvim"
   use "lunarvim/vim-solidity"
-  use "wfxr/minimap.vim"
+  -- use "wfxr/minimap.vim"
   use "Mephistophiles/surround.nvim"
   use "nacro90/numb.nvim"
   use "br1anchen/nvim-colorizer.lua"
@@ -112,6 +112,13 @@ return packer.startup(function(use)
   use "LunarVim/Colorschemes"
   use "Mofiqul/adwaita.nvim"
   use "rose-pine/neovim"
+
+  -- ruby on rails
+  use "vim-ruby/vim-ruby"
+  use "tpope/vim-rails"
+  use "tpope/vim-dispatch"
+  use "tpope/vim-bundler"
+
 
 
  -- cmp plugins
@@ -178,8 +185,8 @@ return packer.startup(function(use)
   use "f-person/git-blame.nvim"
   
   -- Database
-  -- use "tpope/vim-dadbod"
-  -- use "kristijanhusak/vim-dadbod-ui"
+  use "tpope/vim-dadbod"
+  use "kristijanhusak/vim-dadbod-ui"
 
   -- DAP
   -- use "mfussenegger/nvim-dap"
