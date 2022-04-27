@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -221,11 +226,6 @@ _G.packer_plugins = {
     only_cond = false,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
-  },
-  ["minimap.vim"] = {
-    loaded = true,
-    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/minimap.vim",
-    url = "https://github.com/wfxr/minimap.vim"
   },
   neovim = {
     loaded = true,
@@ -388,6 +388,26 @@ _G.packer_plugins = {
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
+  ["vim-bundler"] = {
+    loaded = true,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/vim-bundler",
+    url = "https://github.com/tpope/vim-bundler"
+  },
+  ["vim-dadbod"] = {
+    loaded = true,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/vim-dadbod",
+    url = "https://github.com/tpope/vim-dadbod"
+  },
+  ["vim-dadbod-ui"] = {
+    loaded = true,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/vim-dadbod-ui",
+    url = "https://github.com/kristijanhusak/vim-dadbod-ui"
+  },
+  ["vim-dispatch"] = {
+    loaded = true,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/vim-dispatch",
+    url = "https://github.com/tpope/vim-dispatch"
+  },
   ["vim-markdown"] = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/vim-markdown",
@@ -397,6 +417,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/anna/.local/share/nvim/site/pack/packer/start/vim-prettier",
     url = "https://github.com/prettier/vim-prettier"
+  },
+  ["vim-rails"] = {
+    loaded = true,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/vim-rails",
+    url = "https://github.com/tpope/vim-rails"
+  },
+  ["vim-ruby"] = {
+    loaded = true,
+    path = "/Users/anna/.local/share/nvim/site/pack/packer/start/vim-ruby",
+    url = "https://github.com/vim-ruby/vim-ruby"
   },
   ["vim-solarized8"] = {
     loaded = true,
@@ -431,14 +461,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: cmp-tabnine
-time([[Config for cmp-tabnine]], true)
-try_loadstring("\27LJ\2\nº\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\tsort\2\24snippet_placeholder\a..\27run_on_every_keystroke\2\20max_num_results\3\20\14max_lines\3è\a\nsetup\23cmp_tabnine.config\frequire\0", "config", "cmp-tabnine")
-time([[Config for cmp-tabnine]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
+-- Config for: cmp-tabnine
+time([[Config for cmp-tabnine]], true)
+try_loadstring("\27LJ\2\nº\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\tsort\2\24snippet_placeholder\a..\27run_on_every_keystroke\2\20max_num_results\3\20\14max_lines\3è\a\nsetup\23cmp_tabnine.config\frequire\0", "config", "cmp-tabnine")
+time([[Config for cmp-tabnine]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads

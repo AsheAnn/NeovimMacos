@@ -15,5 +15,6 @@ code_runner.setup({
 		python = "python3",
 		typescript = "deno run",
 		ruby = "ruby",
+    go = "go run"
 	},
 })

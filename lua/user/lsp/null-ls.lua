@@ -12,18 +12,31 @@ null_ls.setup({
 	debug = false,
 	sources = {
 		formatting.prettier.with({
-      extra_filetypes = {
-        "toml",
-        "solidity",
-        "eruby"
-      },
-    extra_args = { "--no-semi" }, --"--single-quote", "--jsx-single-quote",
-    }),
-		formatting.eslint.with({filetypes = {"javascript", "html", "json", "css" }}),
-    formatting.black.with({ extra_args = { "--fast" } }),
+			extra_filetypes = {
+				"toml",
+				"solidity",
+        "css"
+			},
+			extra_args = { "--no-semi" }, --"--single-quote", "--jsx-single-quote",
+		}),
+		-- diagnostics.eslint.with({
+		-- 	filetypes = {
+		-- 		"javascript",
+		-- 		"html",
+		-- 		"json",
+		-- 		"css",
+		-- 		"javascriptreact",
+		-- 		"typescript",
+		-- 		"typescriptreact",
+		-- 		"vue",
+		-- 	},
+		-- }),
+		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
 		formatting.yapf,
-    diagnostics.flake8,
-  },
-
+		diagnostics.flake8,
+		formatting.rubocop,
+		diagnostics.rubocop,
+		formatting.erb_lint,
+	},
 })

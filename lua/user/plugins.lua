@@ -47,7 +47,7 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use {"numToStr/Comment.nvim", commit = "0aaea32"} -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
-  use "kyazdani42/nvim-tree.lua"
+  use {"kyazdani42/nvim-tree.lua", commit = "cff5a10"}
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
   use {"kdheepak/tabline.nvim", commit = "57784ac"}
@@ -69,8 +69,9 @@ return packer.startup(function(use)
   use "br1anchen/nvim-colorizer.lua"
   use { "CRAG666/code_runner.nvim", requires = "nvim-lua/plenary.nvim" }
   use "mg979/vim-visual-multi"
-  -- use "junegunn/goyo.vim"
-  -- use "folke/twilight.nvim"
+  use "tpope/vim-apathy"
+  use "junegunn/goyo.vim"
+  use "folke/twilight.nvim"
   use "mechatroner/rainbow_csv"
   use {"Shougo/defx.nvim",
         run = ':UpdateRemotePlugins',
@@ -96,7 +97,6 @@ return packer.startup(function(use)
   use "godlygeek/tabular"
   use "preservim/vim-markdown"
   use {
-
     "iamcco/markdown-preview.nvim",
     run = "cd app && npm install",
     ft = "markdown",
@@ -119,7 +119,8 @@ return packer.startup(function(use)
   use "tpope/vim-dispatch"
   use "tpope/vim-bundler"
 
-
+  -- go
+  use "fatih/vim-go"
 
  -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -154,9 +155,6 @@ return packer.startup(function(use)
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
-  use {"dsznajder/vscode-es7-javascript-react-snippets",
-  run = "yarn install --frozen-lockfile && yarn compile"
-  }
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
