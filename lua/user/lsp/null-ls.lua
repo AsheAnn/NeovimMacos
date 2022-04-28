@@ -19,22 +19,24 @@ null_ls.setup({
 			},
 			extra_args = { "--no-semi" }, --"--single-quote", "--jsx-single-quote",
 		}),
-		-- diagnostics.eslint.with({
-		-- 	filetypes = {
-		-- 		"javascript",
-		-- 		"html",
-		-- 		"json",
-		-- 		"css",
-		-- 		"javascriptreact",
-		-- 		"typescript",
-		-- 		"typescriptreact",
-		-- 		"vue",
-		-- 	},
-		-- }),
+		diagnostics.eslint_d.with({
+			filetypes = {
+				"javascript",
+				"html",
+				"json",
+				"css",
+				"javascriptreact",
+				"typescript",
+				"typescriptreact",
+				"vue",
+			},
+		}),
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
+    -- python
 		formatting.yapf,
 		diagnostics.flake8,
+    --ruby
 		formatting.rubocop,
 		diagnostics.rubocop,
 		formatting.erb_lint,

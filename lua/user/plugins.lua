@@ -66,6 +66,7 @@ return packer.startup(function(use)
   -- use "wfxr/minimap.vim"
   use "Mephistophiles/surround.nvim"
   use "nacro90/numb.nvim"
+  use "rcarriga/nvim-notify"
   use "br1anchen/nvim-colorizer.lua"
   use { "CRAG666/code_runner.nvim", requires = "nvim-lua/plenary.nvim" }
   use "mg979/vim-visual-multi"
@@ -81,17 +82,8 @@ return packer.startup(function(use)
         }
       }
 
-  use {
-    "folke/trouble.nvim",
-    requires = "kyazdani42/nvim-web-devicons",
-    config = function()
-      require("trouble").setup {
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
-      }
-  end
-}
+  
+
 
   -- markdown
   use "godlygeek/tabular"
@@ -165,6 +157,18 @@ return packer.startup(function(use)
   use "b0o/schemastore.nvim"
   use "ray-x/lsp_signature.nvim"
   use "github/copilot.vim"
+  use {
+  "folke/trouble.nvim",
+  requires = "kyazdani42/nvim-web-devicons",
+  config = function()
+    require("trouble").setup {
+      cmd = "TroubleToggle",
+      mode = "workspace"
+      }
+  end
+}
+
+
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
