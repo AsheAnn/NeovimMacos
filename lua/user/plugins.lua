@@ -95,7 +95,8 @@ return packer.startup(function(use)
 
   -- markdown
   use "godlygeek/tabular"
-  use "preservim/vim-markdown"
+  use "gabrielelana/vim-markdown"
+  use "jxnblk/vim-mdx-js"
   use {
     "iamcco/markdown-preview.nvim",
     run = "cd app && npm install",
@@ -109,7 +110,6 @@ return packer.startup(function(use)
   use "Mofiqul/dracula.nvim"
   use {"Shatur/neovim-ayu", commit = "88bee21"}
   use "lifepillar/vim-solarized8"
-  use "LunarVim/Colorschemes"
   use "Mofiqul/adwaita.nvim"
   use "rose-pine/neovim"
 
@@ -187,10 +187,10 @@ return packer.startup(function(use)
   use "kristijanhusak/vim-dadbod-ui"
 
   -- DAP
-  -- use "mfussenegger/nvim-dap"
-  -- use "theHamsta/nvim-dap-virtual-text"
-  -- use "rcarriga/nvim-dap-ui"
-  -- use "Pocco81/DAPInstall.nvim"
+  use "mfussenegger/nvim-dap"
+  use "theHamsta/nvim-dap-virtual-text"
+  use "rcarriga/nvim-dap-ui"
+  use "Pocco81/DAPInstall.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
