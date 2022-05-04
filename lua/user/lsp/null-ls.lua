@@ -17,7 +17,7 @@ null_ls.setup({
 				"solidity",
         "css"
 			},
-			extra_args = { "--no-semi" }, --"--single-quote", "--jsx-single-quote",
+			extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote"},
 		}),
 		diagnostics.eslint_d.with({
 			filetypes = {
@@ -30,6 +30,7 @@ null_ls.setup({
 				"typescriptreact",
 				"vue",
 			},
+			extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote"},
 		}),
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
