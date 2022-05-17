@@ -64,16 +64,18 @@ return packer.startup(function(use)
   use "phaazon/hop.nvim"
   use "lunarvim/vim-solidity"
   -- use "wfxr/minimap.vim"
-  use "Mephistophiles/surround.nvim"
+  use "ur4ltz/surround.nvim"
   use "nacro90/numb.nvim"
   use "rcarriga/nvim-notify"
   use "br1anchen/nvim-colorizer.lua"
   use { "CRAG666/code_runner.nvim", requires = "nvim-lua/plenary.nvim" }
   use "mg979/vim-visual-multi"
   use "tpope/vim-apathy"
+  use "tpope/vim-repeat"
   use "junegunn/goyo.vim"
   use "folke/twilight.nvim"
   use "mechatroner/rainbow_csv"
+  use "karb94/neoscroll.nvim"
   use {"Shougo/defx.nvim",
         run = ':UpdateRemotePlugins',
         requires = {
@@ -158,14 +160,14 @@ return packer.startup(function(use)
   use "ray-x/lsp_signature.nvim"
   use "github/copilot.vim"
   use {
-  "folke/trouble.nvim",
-  requires = "kyazdani42/nvim-web-devicons",
-  config = function()
-    require("trouble").setup {
-      cmd = "TroubleToggle",
-      }
-  end
-}
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function()
+      require("trouble").setup {
+        cmd = "TroubleToggle",
+        }
+    end
+  }
 
 
 
