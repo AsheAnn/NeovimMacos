@@ -45,12 +45,12 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
-  use {"numToStr/Comment.nvim", commit = "0aaea32"} -- Easily comment stuff
+  use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
-  use {"kyazdani42/nvim-tree.lua", commit = "cff5a10"}
+  use "kyazdani42/nvim-tree.lua"
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
-  use {"kdheepak/tabline.nvim", commit = "57784ac"}
+  use "kdheepak/tabline.nvim"
   use "akinsho/bufferline.nvim"
   use "akinsho/toggleterm.nvim"
   use "ahmedkhalf/project.nvim"
@@ -63,6 +63,7 @@ return packer.startup(function(use)
   use "luukvbaal/stabilize.nvim"
   use "phaazon/hop.nvim"
   use "lunarvim/vim-solidity"
+  use "MattesGroeger/vim-bookmarks"
   -- use "wfxr/minimap.vim"
   use "ur4ltz/surround.nvim"
   use "nacro90/numb.nvim"
@@ -76,6 +77,10 @@ return packer.startup(function(use)
   use "folke/twilight.nvim"
   use "mechatroner/rainbow_csv"
   use "karb94/neoscroll.nvim"
+  use {
+    "SmiteshP/nvim-navic",
+    requires = "neovim/nvim-lspconfig",
+  }
   use {"Shougo/defx.nvim",
         run = ':UpdateRemotePlugins',
         requires = {
@@ -109,6 +114,10 @@ return packer.startup(function(use)
   use "lifepillar/vim-solarized8"
   use "Mofiqul/adwaita.nvim"
   use "rose-pine/neovim"
+  use "RRethy/vim-illuminate"
+
+  -- Typescript 
+  use "jose-elias-alvarez/typescript.nvim"
 
   -- ruby on rails
   use "vim-ruby/vim-ruby"
@@ -177,7 +186,8 @@ return packer.startup(function(use)
   -- Telescope
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-file-browser.nvim"
-
+  use "tom-anders/telescope-vim-bookmarks.nvim"
+  
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",

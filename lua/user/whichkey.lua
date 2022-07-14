@@ -69,6 +69,27 @@ local setup = {
 	},
 }
 
+
+local m_opts = {
+  mode = "n", -- NORMAL mode
+  prefix = "m",
+  buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
+  silent = true, -- use `silent` when creating keymaps
+  noremap = true, -- use `noremap` when creating keymaps
+  nowait = true, -- use `nowait` when creating keymaps
+}
+
+local m_mappings = {
+  a = { "<cmd>silent BookmarkAnnotate<cr>", "Annotate" },
+  c = { "<cmd>silent BookmarkClear<cr>", "Clear" },
+  t = { "<cmd>silent BookmarkToggle<cr>", "Toggle" },
+  j = { "<cmd>silent BookmarkNext<cr>", "Next" },
+  k = { "<cmd>silent BookmarkPrev<cr>", "Prev" },
+  s = { "<cmd>silent BookmarkShowAll<cr>", "Prev" },
+  x = { "<cmd>BookmarkClearAll<cr>", "Clear All" },
+}
+
+
 local opts = {
 	mode = "n", -- NORMAL mode
 	prefix = "<leader>",
@@ -240,3 +261,4 @@ local mappings = {
 
 which_key.setup(setup)
 which_key.register(mappings, opts)
+which_key.register(m_mappings, m_opts)
