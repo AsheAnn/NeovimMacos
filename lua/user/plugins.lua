@@ -77,10 +77,6 @@ return packer.startup(function(use)
   use "folke/twilight.nvim"
   use "mechatroner/rainbow_csv"
   use "karb94/neoscroll.nvim"
-  use {
-    "SmiteshP/nvim-navic",
-    requires = "neovim/nvim-lspconfig",
-  }
   use {"Shougo/defx.nvim",
         run = ':UpdateRemotePlugins',
         requires = {
@@ -166,7 +162,7 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
-  use {"jose-elias-alvarez/null-ls.nvim", commit="0c7624f"} -- for formatters and linters 
+  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters 
   use "prettier/vim-prettier"
   use "b0o/schemastore.nvim"
   use "ray-x/lsp_signature.nvim"
