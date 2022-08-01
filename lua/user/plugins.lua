@@ -77,6 +77,7 @@ return packer.startup(function(use)
   use "folke/twilight.nvim"
   use "mechatroner/rainbow_csv"
   use "karb94/neoscroll.nvim"
+  use "kristijanhusak/vim-carbon-now-sh"
   use {"Shougo/defx.nvim",
         run = ':UpdateRemotePlugins',
         requires = {
@@ -84,7 +85,7 @@ return packer.startup(function(use)
             {'kristijanhusak/defx-git'}
         }
       }
-  
+
   use {
       'glacambre/firenvim',
       run = function() vim.fn['firenvim#install'](0) end
@@ -183,7 +184,7 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-file-browser.nvim"
   use "tom-anders/telescope-vim-bookmarks.nvim"
-  
+
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
@@ -197,7 +198,7 @@ return packer.startup(function(use)
   use "f-person/git-blame.nvim"
   use "ldelossa/gh.nvim"
   use "ldelossa/litee.nvim"
-  
+
   -- Database
   use "tpope/vim-dadbod"
   use "kristijanhusak/vim-dadbod-ui"

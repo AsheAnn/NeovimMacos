@@ -249,7 +249,7 @@ local mappings = {
 	},
 
 	r = {
-		name = "RunCode",
+		name = "Code",
 	},
 
 	o = {
