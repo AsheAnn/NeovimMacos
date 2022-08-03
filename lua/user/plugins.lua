@@ -104,11 +104,11 @@ return packer.startup(function(use)
 
  -- Colorschemes
   use "olimorris/onedarkpro.nvim"
-  use "folke/tokyonight.nvim"
+  use "AsheAnn/tokyonight.nvim"
   use "overcache/NeoSolarized"
-  use "Mofiqul/dracula.nvim"
-  use {"Shatur/neovim-ayu", commit = "88bee21"}
   use "lifepillar/vim-solarized8"
+  use "Mofiqul/dracula.nvim"
+  use "Shatur/neovim-ayu"
   use "Mofiqul/adwaita.nvim"
   use "rose-pine/neovim"
   use "RRethy/vim-illuminate"
