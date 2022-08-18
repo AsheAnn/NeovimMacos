@@ -43,6 +43,7 @@ vim.g.vim_markdown_new_list_item_indent = 2
 vim.g.glow_border = "rounded"
 vim.g.glow_binary_path = vim.env.HOME .. "/bin"
 
+vim.cmd [[command BufOnly silent! execute "%bd|e#|bd#"]]
 vim.cmd [[autocmd FileType javascript set filetype=javascriptreact]]
 vim.cmd [[autocmd FileType text set filetype=markdown]]
 
