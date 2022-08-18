@@ -9,5 +9,10 @@
       ""
     ],
     "description": "export class"
+  },
+  "clear arrow funtion": {
+    "prefix": "caf",
+    "body": ["() => {", "  $1", "}", ""],
+    "description": "clear arrow funtion"
   }
 }

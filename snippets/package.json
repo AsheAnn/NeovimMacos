@@ -62,23 +62,23 @@
           "typescript",
           "typescriptreact"
         ],
-        "path": "./snippets/javascript/typescript.json"
+        "path": "./snippets/typescript.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/javascript/react.json"
+        "path": "./snippets/typescript.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/javascript/react-native.json"
+        "path": "./snippets/typescript.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/javascript/react-ts.json"
+        "path": "./snippets/typescript.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/javascript/react-native-ts.json"
+        "path": "./snippets/typescript.json"
       }
     ]
   }

@@ -1,0 +1,22 @@
+{
+  "className": {
+    "prefix": "cn",
+    "body": ["className=\"$1\""],
+    "description": "className"
+  },
+  "clear arrow funtion": {
+    "prefix": "caf",
+    "body": ["() => {", "  $1", "}", ""],
+    "description": "clear arrow funtion"
+  },
+  "one tag close": {
+    "prefix": "tc",
+    "body": ["<$1 />"],
+    "description": "one close tag"
+  },
+  "null tag": {
+    "prefix": "nt",
+    "body": ["<>", "  $1", "</>"],
+    "description": "one close tag"
+  }
+}
