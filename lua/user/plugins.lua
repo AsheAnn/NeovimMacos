@@ -45,7 +45,7 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
-  use "numToStr/Comment.nvim" -- Easily comment stuff
+  use {"numToStr/Comment.nvim", commit = "a7c826d"} -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
   use "moll/vim-bbye"
@@ -152,16 +152,15 @@ return packer.startup(function(use)
   }
 
   -- snippets
-  use {"L3MON4D3/LuaSnip", commit="53e812"} --snippet engine
+  use {"L3MON4D3/LuaSnip", commit = "b8fa22f"} --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters 
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
+  use "glepnir/lspsaga.nvim"
   use "MunifTanjim/prettier.nvim"
   use "b0o/schemastore.nvim"
   use "ray-x/lsp_signature.nvim"

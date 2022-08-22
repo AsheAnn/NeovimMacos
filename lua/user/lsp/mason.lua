@@ -16,17 +16,13 @@ local servers = {
   "jsonls",
   "solc",
   "solidity_ls",
-  "sumneko_lua", 
+  "solang",
+  "sumneko_lua",
   "tailwindcss",
-  "tflint",
-  "terraformls",
   "tsserver",
   "pyright",
   "yamlls",
-  "bashls",
-  "clangd",
-  "taplo",
-  "zk@v0.10.1",
+  "zk",
 }
 
 local settings = {
@@ -61,37 +57,14 @@ for _, server in pairs(servers) do
     capabilities = require("user.lsp.handlers").capabilities,
   }
 
-  server = vim.split(server, "@")[1]
-
   if server == "jsonls" then
     local jsonls_opts = require "user.lsp.settings.jsonls"
     opts = vim.tbl_deep_extend("force", jsonls_opts, opts)
   end
 
-  if server == "yamlls" then
-    local yamlls_opts = require "user.lsp.settings.yamlls"
-    opts = vim.tbl_deep_extend("force", yamlls_opts, opts)
-  end
-
   if server == "sumneko_lua" then
-    local l_status_ok, lua_dev = pcall(require, "lua-dev")
-    if not l_status_ok then
-      return
-    end
-    -- local sumneko_opts = require "user.lsp.settings.sumneko_lua"
-    -- opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
-    -- opts = vim.tbl_deep_extend("force", require("lua-dev").setup(), opts)
-    local luadev = lua_dev.setup {
-      --   -- add any options here, or leave empty to use the default settings
-      -- lspconfig = opts,
-      lspconfig = {
-        on_attach = opts.on_attach,
-        capabilities = opts.capabilities,
-        --   -- settings = opts.settings,
-      },
-    }
-    lspconfig.sumneko_lua.setup(luadev)
-    goto continue
+	 	local sumneko_opts = require("user.lsp.settings.sumneko_lua")
+	 	opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
   end
 
   if server == "tsserver" then
@@ -119,15 +92,12 @@ for _, server in pairs(servers) do
     opts = vim.tbl_deep_extend("force", emmet_ls_opts, opts)
   end
 
-  if server == "zk" then
-    local zk_opts = require "user.lsp.settings.zk"
-    opts = vim.tbl_deep_extend("force", zk_opts, opts)
+  if server == "cssls" then
+    local cssls_opts = require "user.lsp.settings.cssls"
+    opts = vim.tbl_deep_extend("force", cssls_opts, opts)
   end
 
-
-
   lspconfig[server].setup(opts)
-  ::continue::
 end
 
 -- TODO: add something to installer later

@@ -9,7 +9,6 @@ local cfg = {
   debug = false, -- set to true to enable debug logging
   log_path = "debug_log_file_path", -- debug log path
   verbose = false, -- show debug line number
-
   bind = true, -- This is mandatory, otherwise border config won't get registered.
   -- If you want to hook lspsaga or other signature handler, pls set to false
   doc_lines = 0, -- will show two lines of comment/doc(if there are more than two lines in doc, will be truncated);

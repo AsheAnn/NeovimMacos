@@ -152,7 +152,8 @@ local mappings = {
 
 	l = {
 		name = "LSP",
-		a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
+		a = { "<cmd>Lspsaga code_action<cr>", "Code Action" },
+    F = { "<cmd>Lspsaga lsp_finder<cr>", "Lsp Finder"},
 		d = {
 			"<cmd>TroubleToggle<cr>",
 			"workspace_diagnostics",
@@ -163,7 +164,7 @@ local mappings = {
 		},
 		f = { "<cmd>lua vim.lsp.buf.format({ async = true })<cr>", "Format" },
 		i = { "<cmd>LspInfo<cr>", "Info" },
-		I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
+		I = { "<cmd>Mason<cr>", "Installer Info" },
 		j = {
 			"<cmd>lua vim.lsp.diagnostic.goto_next()<CR>",
 			"Next Diagnostic",

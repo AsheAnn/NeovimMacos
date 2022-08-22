@@ -34,5 +34,4 @@ require "user.lsp-colors"
 require "user.dap"
 require "user.notify"
 require "user.bookmark"
---[[ require "user.mason" ]]
 require "user.zk-nvim"
