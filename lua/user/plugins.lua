@@ -64,7 +64,6 @@ return packer.startup(function(use)
   use "phaazon/hop.nvim"
   use "lunarvim/vim-solidity"
   use "MattesGroeger/vim-bookmarks"
-  -- use "wfxr/minimap.vim"
   use "ur4ltz/surround.nvim"
   use "nacro90/numb.nvim"
   use "rcarriga/nvim-notify"
@@ -73,11 +72,9 @@ return packer.startup(function(use)
   use "mg979/vim-visual-multi"
   use "tpope/vim-apathy"
   use "tpope/vim-repeat"
-  use "junegunn/goyo.vim"
   use "folke/twilight.nvim"
   use "mechatroner/rainbow_csv"
   use "karb94/neoscroll.nvim"
-  use "kristijanhusak/vim-carbon-now-sh"
   use {"Shougo/defx.nvim",
         run = ':UpdateRemotePlugins',
         requires = {
@@ -111,7 +108,6 @@ return packer.startup(function(use)
   use "Shatur/neovim-ayu"
   use "Mofiqul/adwaita.nvim"
   use "rose-pine/neovim"
-  use "RRethy/vim-illuminate"
 
   -- Typescript 
   use "jose-elias-alvarez/typescript.nvim"
@@ -156,7 +152,7 @@ return packer.startup(function(use)
   }
 
   -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
+  use {"L3MON4D3/LuaSnip", commit="53e812"} --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
   -- LSP
@@ -164,10 +160,11 @@ return packer.startup(function(use)
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters 
-  use "prettier/vim-prettier"
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
+  use "MunifTanjim/prettier.nvim"
   use "b0o/schemastore.nvim"
   use "ray-x/lsp_signature.nvim"
-  use "github/copilot.vim"
   use {
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",
@@ -179,10 +176,8 @@ return packer.startup(function(use)
   }
 
 
-
   -- Telescope
   use "nvim-telescope/telescope.nvim"
-  use "nvim-telescope/telescope-file-browser.nvim"
   use "tom-anders/telescope-vim-bookmarks.nvim"
 
   -- Treesitter
@@ -196,8 +191,9 @@ return packer.startup(function(use)
   -- Git
   use "lewis6991/gitsigns.nvim"
   use "f-person/git-blame.nvim"
-  use "ldelossa/gh.nvim"
-  use "ldelossa/litee.nvim"
+
+  -- take note
+  use "mickael-menu/zk-nvim"
 
   -- Database
   use "tpope/vim-dadbod"
