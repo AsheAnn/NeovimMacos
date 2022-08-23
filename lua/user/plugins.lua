@@ -170,9 +170,6 @@ return packer.startup(function(use)
       }
     end
   }
-  use "SmiteshP/nvim-navic"
-  use "SmiteshP/nvim-gps"
-
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"

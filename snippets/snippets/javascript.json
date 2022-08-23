@@ -14,5 +14,10 @@
     "prefix": "caf",
     "body": ["() => {", "  $1", "}", ""],
     "description": "clear arrow funtion"
+  },
+  "import": {
+    "prefix": "ip",
+    "body": ["import $1 from \t$2"],
+    "description": "import"
   }
 }

@@ -7,7 +7,8 @@ if vim.fn.has "mac" == 1 then
   return {
     kind = {
       Text = "",
-      Method = "m",
+      Method = " ",
+      -- Method = "m",
       Function = "",
       -- Constructor = "",
       Constructor = "",
@@ -22,9 +23,7 @@ if vim.fn.has "mac" == 1 then
       Unit = "",
       Value = "",
       Enum = "",
-      -- Keyword = "",
       Keyword = "",
-      -- Snippet = "",
       Snippet = "",
       Color = "",
       File = "",
@@ -84,7 +83,6 @@ if vim.fn.has "mac" == 1 then
       Note = "",
       BookMark = "",
       Pencil = "",
-      -- ChevronRight = "",
       ChevronRight = ">",
       Table = "",
       Calendar = "",
