@@ -209,6 +209,15 @@ local mappings = {
 		name = "Code",
 	},
 
+  m = {
+    name = "Packages Manager",
+    i = {"<cmd>Ni<cr>", "Ni install"},
+    n = {"<cmd>Npm<cr>", "npm install"},
+    y = {"<cmd>Yarn<cr>", "yarn install"},
+    p = {"<cmd>Pnpm<cr>", "pnpm install"},
+    c = {"<cmd>q|bl|bd<cr>", "Close Terminal"}
+  },
+
 	o = {
 		name = "background_color",
 		l = { "<cmd>set background=light<CR>", "light" },

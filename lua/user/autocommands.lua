@@ -5,6 +5,7 @@ vim.cmd [[
     autocmd TextYankPost * silent!lua require('vim.highlight').on_yank({higroup = 'Visual', timeout = 200}) 
     autocmd BufWinEnter * :set formatoptions-=cro
     autocmd FileType qf set nobuflisted
+    autocmd TermOpen * setlocal nonumber norelativenumber
   augroup end
 
   augroup _git
@@ -17,6 +18,7 @@ vim.cmd [[
     autocmd!
     autocmd FileType markdown setlocal wrap
     autocmd FileType markdown setlocal spell
+    autocmd FileType text set filetype=markdown
   augroup end
 
   augroup _auto_resize
@@ -27,6 +29,11 @@ vim.cmd [[
   augroup _alpha
     autocmd!
     autocmd User AlphaReady set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
+  augroup end
+
+  augroup _javascript
+    autocmd!
+    autocmd FileType javascript set filetype=javascriptreact
   augroup end
 ]]
 

@@ -44,8 +44,11 @@ vim.g.glow_border = "rounded"
 vim.g.glow_binary_path = vim.env.HOME .. "/bin"
 
 vim.cmd [[command BufOnly silent! execute "%bd|e#|bd#"]]
-vim.cmd [[autocmd FileType javascript set filetype=javascriptreact]]
-vim.cmd [[autocmd FileType text set filetype=markdown]]
+vim.cmd [[command Ni silent! execute "vs|vertical resize 64|term ni"]]
+vim.cmd [[command Yarn silent! execute "vs|vertical resize 64|term yarn"]]
+vim.cmd [[command Pnpm silent! execute "vs|vertical resize 64|term pnpm i"]]
+vim.cmd [[command Npm silent! execute "vs|vertical resize 64|term npm i"]]
+
 
 vim.opt.shortmess:append "c"
 -- vim.opt.winbar = "%{%v:lua.require'user.winbar'.get_winbar()%}"
@@ -58,4 +61,3 @@ end
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
-
