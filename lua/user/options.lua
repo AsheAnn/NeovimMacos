@@ -48,6 +48,8 @@ vim.cmd [[autocmd FileType javascript set filetype=javascriptreact]]
 vim.cmd [[autocmd FileType text set filetype=markdown]]
 
 vim.opt.shortmess:append "c"
+-- vim.opt.winbar = "%{%v:lua.require'user.winbar'.get_winbar()%}"
+-- vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
 
 for k, v in pairs(options) do
   vim.opt[k] = v

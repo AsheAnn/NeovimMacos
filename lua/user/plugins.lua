@@ -45,47 +45,44 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
-  use {"numToStr/Comment.nvim", commit = "a7c826d"} -- Easily comment stuff
+  use { "numToStr/Comment.nvim", commit = "a7c826d" } -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
   use "kdheepak/tabline.nvim"
-  use "akinsho/bufferline.nvim"
   use "akinsho/toggleterm.nvim"
   use "ahmedkhalf/project.nvim"
   use "lewis6991/impatient.nvim"
   use "lukas-reineke/indent-blankline.nvim"
   use "goolord/alpha-nvim"
-  use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
   use "folke/zen-mode.nvim"
   use "luukvbaal/stabilize.nvim"
   use "phaazon/hop.nvim"
-  use "lunarvim/vim-solidity"
   use "MattesGroeger/vim-bookmarks"
   use "ur4ltz/surround.nvim"
   use "nacro90/numb.nvim"
   use "rcarriga/nvim-notify"
   use "br1anchen/nvim-colorizer.lua"
-  use { "CRAG666/code_runner.nvim", requires = "nvim-lua/plenary.nvim" }
+  use "CRAG666/code_runner.nvim"
   use "mg979/vim-visual-multi"
   use "tpope/vim-apathy"
   use "tpope/vim-repeat"
   use "folke/twilight.nvim"
   use "mechatroner/rainbow_csv"
   use "karb94/neoscroll.nvim"
-  use {"Shougo/defx.nvim",
-        run = ':UpdateRemotePlugins',
-        requires = {
-            {'kristijanhusak/defx-icons'},
-            {'kristijanhusak/defx-git'}
-        }
-      }
+  use { "Shougo/defx.nvim",
+    run = ':UpdateRemotePlugins',
+    requires = {
+      { 'kristijanhusak/defx-icons' },
+      { 'kristijanhusak/defx-git' }
+    }
+  }
 
   use {
-      'glacambre/firenvim',
-      run = function() vim.fn['firenvim#install'](0) end
+    'glacambre/firenvim',
+    run = function() vim.fn['firenvim#install'](0) end
   }
 
 
@@ -99,7 +96,7 @@ return packer.startup(function(use)
     ft = "markdown",
   }
 
- -- Colorschemes
+  -- Colorschemes
   use "olimorris/onedarkpro.nvim"
   use "AsheAnn/tokyonight.nvim"
   use "overcache/NeoSolarized"
@@ -109,7 +106,7 @@ return packer.startup(function(use)
   use "Mofiqul/adwaita.nvim"
   use "rose-pine/neovim"
 
-  -- Typescript 
+  -- Typescript
   use "jose-elias-alvarez/typescript.nvim"
 
   -- ruby on rails
@@ -121,12 +118,12 @@ return packer.startup(function(use)
   -- go
   use "fatih/vim-go"
 
- -- cmp plugins
+  -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-emoji"
   use "hrsh7th/cmp-nvim-lua"
@@ -152,12 +149,12 @@ return packer.startup(function(use)
   }
 
   -- snippets
-  use {"L3MON4D3/LuaSnip", commit = "b8fa22f"} --snippet engine
+  use { "L3MON4D3/LuaSnip", commit = "b8fa22f" } --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
-  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters 
+  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
   use "glepnir/lspsaga.nvim"
@@ -170,9 +167,11 @@ return packer.startup(function(use)
     config = function()
       require("trouble").setup {
         cmd = "TroubleToggle",
-        }
+      }
     end
   }
+  use "SmiteshP/nvim-navic"
+  use "SmiteshP/nvim-gps"
 
 
   -- Telescope
