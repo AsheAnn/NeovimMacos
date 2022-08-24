@@ -1,0 +1,16 @@
+{
+  "localpcall": {
+    "prefix": "prs",
+    "body": [
+      "local status_ok, ${1:var} = pcall(require,\"$1\")",
+      "if not status_ok then",
+      "  return",
+      "end",
+      "",
+      "$1.setup {",
+      "",
+      "}"
+    ],
+    "description": "local pcall and return"
+  }
+}

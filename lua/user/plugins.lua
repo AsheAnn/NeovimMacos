@@ -98,14 +98,11 @@ return packer.startup(function(use)
   }
 
   -- Colorschemes
-  use "olimorris/onedarkpro.nvim"
   use "AsheAnn/tokyonight.nvim"
+  use "olimorris/onedarkpro.nvim"
   use "overcache/NeoSolarized"
   use "lifepillar/vim-solarized8"
-  use "Mofiqul/dracula.nvim"
   use "Shatur/neovim-ayu"
-  use "Mofiqul/adwaita.nvim"
-  use "rose-pine/neovim"
 
   -- Typescript
   use "jose-elias-alvarez/typescript.nvim"
@@ -165,7 +162,6 @@ return packer.startup(function(use)
   use "folke/lua-dev.nvim"
   use {
     "folke/trouble.nvim",
-    requires = "kyazdani42/nvim-web-devicons",
     config = function()
       require("trouble").setup {
         cmd = "TroubleToggle",

@@ -7,19 +7,19 @@
     "snippets": [
       {
         "language": "eruby",
-        "path": "./snippets/erb.json"
+        "path": "./core/erb.json"
       },
       {
         "language": "ruby",
-        "path": "./snippets/ruby.json"
+        "path": "./core/ruby.json"
       },
       {
         "language": "rails",
-        "path": "./snippets/frameworks/rails.json"
+        "path": "./core/frameworks/rails.json"
       },
       {
         "language": "solidity",
-        "path": "./snippets/solidity.json"
+        "path": "./core/solidity.json"
       },
       {
         "language": [
@@ -28,11 +28,11 @@
           "pug",
           "eruby"
         ],
-        "path": "./snippets/html.json"
+        "path": "./core/html.json"
       },
       {
         "language": "html",
-        "path": "./snippets/p5jshtml.json"
+        "path": "./core/p5jshtml.json"
       },
       {
         "language": [
@@ -42,7 +42,7 @@
           "less",
           "stylus"
         ],
-        "path": "./snippets/css.json"
+        "path": "./core/css.json"
       },
       {
         "language": [
@@ -51,34 +51,38 @@
           "vue",
           "svelte"
         ],
-        "path": "./snippets/javascript.json"
+        "path": "./core/javascript.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/p5js.json"
+        "path": "./core/p5js.json"
       },
       {
         "language": [
           "typescript",
           "typescriptreact"
         ],
-        "path": "./snippets/typescript.json"
+        "path": "./core/typescript.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/typescript.json"
+        "path": "./core/typescript.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/typescript.json"
+        "path": "./core/typescript.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/typescript.json"
+        "path": "./core/typescript.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/typescript.json"
+        "path": "./core/typescript.json"
+      },
+      {
+        "language": "lua",
+        "path": "./core/lua.json"
       }
     ]
   }

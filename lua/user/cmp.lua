@@ -12,6 +12,7 @@ require("luasnip/loaders/from_vscode").lazy_load()
 require("luasnip/loaders/from_vscode").lazy_load({ paths = { "./snippets" } })
 require("luasnip").filetype_extend("javascriptreact", { "html" })
 
+
 local check_backspace = function()
 	local col = vim.fn.col(".") - 1
 	return col == 0 or vim.fn.getline("."):sub(col, col):match("%s")
@@ -75,8 +76,8 @@ cmp.setup({
 				vim_item.kind = icons.misc.Robot
 			end
 			vim_item.menu = ({
-				nvim_lsp = "[LSP]",
 				luasnip = "[Snippet]",
+				nvim_lsp = "[LSP]",
 				cmp_tabnine = "[TN]",
 				nvim_lua = "[Nvim]",
 				buffer = "[Buffer]",
@@ -87,8 +88,8 @@ cmp.setup({
 		end,
 	},
 	sources = {
-		{ name = "nvim_lsp" },
 		{ name = "luasnip" },
+		{ name = "nvim_lsp" },
 		{ name = "cmp_tabnine" },
 		{ name = "nvim_lua" },
 		{ name = "buffer" },
