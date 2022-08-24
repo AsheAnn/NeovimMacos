@@ -15,6 +15,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
   vim.cmd [[packadd packer.nvim]]
 end
 
+
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
 vim.cmd [[
   augroup packer_user_config
@@ -161,6 +162,7 @@ return packer.startup(function(use)
   use "MunifTanjim/prettier.nvim"
   use "b0o/schemastore.nvim"
   use "ray-x/lsp_signature.nvim"
+  use "folke/lua-dev.nvim"
   use {
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons",

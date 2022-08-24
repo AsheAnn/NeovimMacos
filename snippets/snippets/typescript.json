@@ -18,5 +18,10 @@
     "prefix": "nt",
     "body": ["<>", "  $1", "</>"],
     "description": "one close tag"
+  },
+  "import": {
+    "prefix": "ip",
+    "body": ["import $1 from \t$2"],
+    "description": "import"
   }
 }
