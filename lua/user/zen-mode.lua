@@ -7,11 +7,11 @@ zen_mode.setup({
 	window = {
 		backdrop = 1,
 		height = 1, -- height of the Zen window
-		width = 100,
+		width = 80,
 		options = {
 			signcolumn = "yes", -- disable signcolumn
-			number = true, -- disable number column
-			relativenumber = true, -- disable relative numbers
+			number = true, 
+			relativenumber = true,
 			cursorline = false, -- disable cursorline
 			cursorcolumn = false, -- disable cursor column
 			foldcolumn = "0", -- disable fold column
@@ -21,7 +21,7 @@ zen_mode.setup({
 	plugins = {
 		gitsigns = { enabled = false }, -- disables git signs
 		tmux = { enabled = false },
-		twilight = { enabled = true },
+		twilight = { enabled = false },
 	},
 	-- on_open = function()
 	--   vim.lsp.diagnostic.disable()

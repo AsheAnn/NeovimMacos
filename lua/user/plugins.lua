@@ -70,7 +70,6 @@ return packer.startup(function(use)
   use "mg979/vim-visual-multi"
   use "tpope/vim-apathy"
   use "tpope/vim-repeat"
-  use "folke/twilight.nvim"
   use "mechatroner/rainbow_csv"
   use "karb94/neoscroll.nvim"
   use { "Shougo/defx.nvim",
