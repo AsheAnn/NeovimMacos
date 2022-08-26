@@ -19,7 +19,6 @@ M.setup = function()
 	end
 
 	local config = {
-		-- disable virtual text
 		virtual_text = {
 			prefix = "●",
 		},
@@ -27,11 +26,11 @@ M.setup = function()
 		signs = {
 			active = signs,
 		},
-		update_in_insert = true,
-		underline = true,
-		severity_sort = true,
+		update_in_insert = false,
+		underline = false,
+		severity_sort = false,
 		float = {
-			focusable = false,
+			focusable = true,
 			style = "minimal",
 			border = "rounded",
 			source = "always",
