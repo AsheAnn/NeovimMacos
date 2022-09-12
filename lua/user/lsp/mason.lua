@@ -20,6 +20,7 @@ local servers = {
   "sumneko_lua",
   "tailwindcss",
   "tsserver",
+  "vuels",
   "pyright",
   "yamlls",
   "zk",

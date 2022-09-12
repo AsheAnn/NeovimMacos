@@ -19,5 +19,6 @@ return {
 		"sss",
 		"hbs",
 		"handlebars",
+    "vue"
 	},
 }

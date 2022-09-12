@@ -25,8 +25,7 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 
 
 -- Add to next row
-keymap("n", "<C-o>", "o<Esc>k", opts)
-
+keymap("n", "<Enter>", "o<Esc>k", opts)
 
 
 

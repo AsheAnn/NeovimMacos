@@ -88,7 +88,8 @@ return packer.startup(function(use)
 
   -- markdown
   use "godlygeek/tabular"
-  use "gabrielelana/vim-markdown"
+  -- use "gabrielelana/vim-markdown"
+  use "SidOfc/mkdx"
   use "jxnblk/vim-mdx-js"
   use {
     "iamcco/markdown-preview.nvim",
