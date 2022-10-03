@@ -23,5 +23,10 @@
     "prefix": "ip",
     "body": ["import $1 from \t$2"],
     "description": "import"
+  },
+  "center align": {
+    "prefix": "cnal",
+    "body": ["flex justify-center items-center"],
+    "description": "center align"
   }
 }

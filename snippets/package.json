@@ -65,18 +65,6 @@
         "path": "./core/typescript.json"
       },
       {
-        "language": "javascriptreact",
-        "path": "./core/typescript.json"
-      },
-      {
-        "language": "javascriptreact",
-        "path": "./core/typescript.json"
-      },
-      {
-        "language": "typescriptreact",
-        "path": "./core/typescript.json"
-      },
-      {
         "language": "typescriptreact",
         "path": "./core/typescript.json"
       },

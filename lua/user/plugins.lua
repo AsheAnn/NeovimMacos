@@ -51,6 +51,7 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-tree.lua"
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
+  use { "akinsho/bufferline.nvim", tag = "v2.*"}
   use "kdheepak/tabline.nvim"
   use "akinsho/toggleterm.nvim"
   use "ahmedkhalf/project.nvim"
@@ -103,6 +104,7 @@ return packer.startup(function(use)
   use "overcache/NeoSolarized"
   use "lifepillar/vim-solarized8"
   use "Shatur/neovim-ayu"
+  use "projekt0n/github-nvim-theme"
 
   -- Typescript
   use "jose-elias-alvarez/typescript.nvim"
@@ -117,7 +119,7 @@ return packer.startup(function(use)
   use "fatih/vim-go"
 
   -- cmp plugins
-  use "hrsh7th/nvim-cmp" -- The completion plugin
+  use {"hrsh7th/nvim-cmp", commit = "b588569"} -- The completion plugin
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
@@ -152,7 +154,7 @@ return packer.startup(function(use)
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
-  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+  use {"jose-elias-alvarez/null-ls.nvim", commit = "14b5a30"} -- for formatters and linters
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
   use "glepnir/lspsaga.nvim"
