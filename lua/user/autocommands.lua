@@ -35,6 +35,7 @@ vim.cmd [[
     autocmd!
     autocmd FileType javascript set filetype=javascriptreact
   augroup end
+
 ]]
 
 -- Autoformat

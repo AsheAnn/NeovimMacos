@@ -15,7 +15,7 @@ local servers = {
   "html",
   "jsonls",
   "solc",
-  "solidity_ls",
+  "solidity",
   "solang",
   "sumneko_lua",
   "tailwindcss",
@@ -24,6 +24,10 @@ local servers = {
   "pyright",
   "yamlls",
   "zk",
+  "astro",
+  "elixirls",
+  "prismals",
+  "rust_analyzer"
 }
 
 local settings = {
@@ -64,14 +68,14 @@ for _, server in pairs(servers) do
   end
 
   if server == "sumneko_lua" then
-    local l_status_ok, lua_dev = pcall(require, "lua-dev")
+    local l_status_ok, neodev = pcall(require, "neodev")
     if not l_status_ok then
       return
     end
     -- local sumneko_opts = require "user.lsp.settings.sumneko_lua"
     -- opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
     -- opts = vim.tbl_deep_extend("force", require("lua-dev").setup(), opts)
-    local luadev = lua_dev.setup {
+    local luadev = neodev.setup {
       lspconfig = {
         on_attach = opts.on_attach,
         capabilities = opts.capabilities,
@@ -113,6 +117,22 @@ for _, server in pairs(servers) do
     local cssls_opts = require "user.lsp.settings.cssls"
     opts = vim.tbl_deep_extend("force", cssls_opts, opts)
   end
+
+ if server == "rust_analyzer" then
+    local rust_opts = require "user.lsp.settings.rust"
+    -- opts = vim.tbl_deep_extend("force", rust_opts, opts)
+    local rust_tools_status_ok, rust_tools = pcall(require, "rust-tools")
+    if not rust_tools_status_ok then
+      return
+    end
+
+    rust_tools.setup(rust_opts)
+    goto continue
+  end
+
+
+
+
 
   lspconfig[server].setup(opts)
   ::continue::

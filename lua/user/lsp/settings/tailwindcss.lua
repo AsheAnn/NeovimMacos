@@ -46,6 +46,7 @@ return {
 		"typescriptreact",
 		"vue",
 		"svelte",
+    "heex"
 	},
 	settings = {
 		tailwindCSS = {

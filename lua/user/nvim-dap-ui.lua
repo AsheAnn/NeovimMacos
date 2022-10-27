@@ -5,7 +5,7 @@ end
 
 dapui.setup{
     icons = { expanded = "▾", collapsed = "▸" },
-  mappings = {
+    mappings = {
     -- Use a table to apply multiple mappings
     expand = { "<CR>", "<2-LeftMouse>" },
     open = "o",

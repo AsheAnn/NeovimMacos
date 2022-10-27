@@ -118,6 +118,13 @@ return packer.startup(function(use)
   -- go
   use "fatih/vim-go"
 
+  -- rust
+  use { "christianchiarulli/rust-tools.nvim", branch = "modularize_and_inlay_rewrite" }
+  use "Saecki/crates.nvim"
+
+
+
+
   -- cmp plugins
   use {"hrsh7th/nvim-cmp", commit = "b588569"} -- The completion plugin
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
@@ -161,7 +168,7 @@ return packer.startup(function(use)
   use "MunifTanjim/prettier.nvim"
   use "b0o/schemastore.nvim"
   use "ray-x/lsp_signature.nvim"
-  use "folke/lua-dev.nvim"
+  use "folke/neodev.nvim"
   use {
     "folke/trouble.nvim",
     config = function()

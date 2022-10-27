@@ -16,9 +16,9 @@ null_ls.setup({
 			extra_filetypes = {
 				"toml",
 				"solidity",
-        "css"
+				"css",
 			},
-			extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote"},
+			extra_args = { "--no-semi", "--single-quote", "--jsx-quote" },
 		}),
 		diagnostics.eslint_d.with({
 			filetypes = {
@@ -31,22 +31,42 @@ null_ls.setup({
 				"typescriptreact",
 				"vue",
 			},
-			extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote"},
+			extra_args = { "--no-semi", "--single-quote", "--jsx-quote" },
 		}),
-    diagnostics.eslint.with({
-      filetype = {
-        "json"
-      }
-    }),
+		diagnostics.eslint.with({
+			filetype = {
+				"json",
+			},
+		}),
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
-    -- python
+
+		formatting.rustfmt,
+		formatting.rustywind.with({
+			filetypes = {
+				"javascript",
+				"javascriptreact",
+				"typescript",
+				"typescriptreact",
+				"vue",
+				"svelte",
+				"html",
+			},
+      args = { "--stdin" }
+		}),
+
+		-- python
 		formatting.yapf,
 		diagnostics.flake8,
-    --ruby
+
+		--ruby
 		formatting.rubocop,
 		diagnostics.rubocop,
 		formatting.erb_lint,
-    diagnostics.erb_lint,
+		diagnostics.erb_lint,
+
+		--sql
+		formatting.sql_formatter,
+		diagnostics.sqlfluff,
 	},
 })
