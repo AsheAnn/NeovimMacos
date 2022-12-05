@@ -51,6 +51,9 @@ null_ls.setup({
 				"vue",
 				"svelte",
 				"html",
+        "scss",
+        "css",
+        "sass"
 			},
       args = { "--stdin" }
 		}),
