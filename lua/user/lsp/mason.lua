@@ -118,6 +118,13 @@ for _, server in pairs(servers) do
     opts = vim.tbl_deep_extend("force", cssls_opts, opts)
   end
 
+
+  if server == "astro" then
+    local astro_opts = require "user.lsp.settings.astro"
+    opts = vim.tbl_deep_extend("force", astro_opts, opts)
+  end
+
+
  if server == "rust_analyzer" then
     local rust_opts = require "user.lsp.settings.rust"
     -- opts = vim.tbl_deep_extend("force", rust_opts, opts)

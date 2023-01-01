@@ -17,6 +17,8 @@ null_ls.setup({
 				"toml",
 				"solidity",
 				"css",
+        "scss",
+        "astro"
 			},
 			extra_args = { "--no-semi", "--single-quote", "--jsx-quote" },
 		}),
@@ -30,6 +32,7 @@ null_ls.setup({
 				"typescript",
 				"typescriptreact",
 				"vue",
+        "astro"
 			},
 			extra_args = { "--no-semi", "--single-quote", "--jsx-quote" },
 		}),
@@ -53,7 +56,8 @@ null_ls.setup({
 				"html",
         "scss",
         "css",
-        "sass"
+        "sass",
+        "astro"
 			},
       args = { "--stdin" }
 		}),

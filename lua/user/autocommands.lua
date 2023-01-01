@@ -6,6 +6,8 @@ vim.cmd [[
     autocmd BufWinEnter * :set formatoptions-=cro
     autocmd FileType qf set nobuflisted
     autocmd TermOpen * setlocal nonumber norelativenumber
+    autocmd BufRead,BufEnter *.astro set filetype=astro
+    autocmd FileType astro set filetype=astro
   augroup end
 
   augroup _git
@@ -35,7 +37,6 @@ vim.cmd [[
     autocmd!
     autocmd FileType javascript set filetype=javascriptreact
   augroup end
-
 ]]
 
 -- Autoformat

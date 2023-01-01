@@ -23,11 +23,8 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-
 -- Add to next row
 keymap("n", "<Enter>", "o<Esc>k", opts)
-
-
 
 -- Resize with arrows
 keymap("n", "<A-Up>", ":resize -2<CR>", opts)
@@ -77,5 +74,3 @@ keymap("n", "<C-z>", "<cmd>ZenMode<CR>", opts)
 keymap("n", "<leader>r", ":RunCode<CR>", { noremap = true, silent = false })
 -- keymap("n", "<leader>o", ":set background=light<CR>", opts)
 -- keymap("n", "<leader>oo", ":set background=dark<CR>", opts)
-
-
