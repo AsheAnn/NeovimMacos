@@ -45,7 +45,7 @@ return packer.startup(function(use)
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 	use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
-	use({ "numToStr/Comment.nvim", commit = "a7c826d" }) -- Easily comment stuff
+	use("numToStr/Comment.nvim") -- Easily comment stuff
 	use("kyazdani42/nvim-web-devicons")
 	use("kyazdani42/nvim-tree.lua")
 	use("moll/vim-bbye")
@@ -71,6 +71,7 @@ return packer.startup(function(use)
 	use("tpope/vim-apathy")
 	use("tpope/vim-repeat")
 	use("mechatroner/rainbow_csv")
+	use("MunifTanjim/nui.nvim")
 	use("karb94/neoscroll.nvim")
 	use({
 		"Shougo/defx.nvim",
@@ -80,7 +81,6 @@ return packer.startup(function(use)
 			{ "kristijanhusak/defx-git" },
 		},
 	})
-	use("napmn/react-extract.nvim")
 	use({
 		"glacambre/firenvim",
 		run = function()
@@ -88,12 +88,9 @@ return packer.startup(function(use)
 		end,
 	})
 
-	use("MunifTanjim/nui.nvim")
-	use("folke/noice.nvim")
 
 	-- markdown
 	use("godlygeek/tabular")
-	-- use "gabrielelana/vim-markdown"
 	use("SidOfc/mkdx")
 	use("jxnblk/vim-mdx-js")
 	use({
@@ -192,8 +189,8 @@ return packer.startup(function(use)
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 	use("windwp/nvim-ts-autotag")
 
-	-- chatGPT
-	use("jackMort/ChatGPT.nvim")
+  --chatGPT
+  use("jackMort/ChatGPT.nvim")
 
 	-- Git
 	use("lewis6991/gitsigns.nvim")
