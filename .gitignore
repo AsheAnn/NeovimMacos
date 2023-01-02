@@ -3,4 +3,5 @@
 .luarc.json
 ./bookmarks
 .env
+env.lua
 

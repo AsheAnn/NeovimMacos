@@ -1,5 +1,5 @@
-local status, neural = pcall(require, "neural")
-if not status then
+local status_ok, neural = pcall(require, "neural")
+if not status_ok or vim.env.OPENAI_API_KEY == nil then
 	return
 end
 
@@ -9,6 +9,6 @@ neural.setup({
 		prompt = "<C-space>", -- Open prompt
 	},
 	open_ai = {
-		api_key = vim.env.OPEN_AI_KEY,
+		api_key = vim.env.OPENAI_API_KEY,
 	},
 })
