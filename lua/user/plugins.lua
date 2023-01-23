@@ -73,6 +73,8 @@ return packer.startup(function(use)
 	use("mechatroner/rainbow_csv")
 	use("MunifTanjim/nui.nvim")
 	use("karb94/neoscroll.nvim")
+	use("junegunn/vim-easy-align")
+	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
 	use({
 		"Shougo/defx.nvim",
 		run = ":UpdateRemotePlugins",
@@ -87,7 +89,6 @@ return packer.startup(function(use)
 			vim.fn["firenvim#install"](0)
 		end,
 	})
-
 
 	-- markdown
 	use("godlygeek/tabular")
@@ -162,7 +163,7 @@ return packer.startup(function(use)
 	use({ "jose-elias-alvarez/null-ls.nvim", commit = "14b5a30" }) -- for formatters and linters
 	use("williamboman/mason.nvim")
 	use("williamboman/mason-lspconfig.nvim")
-	use("glepnir/lspsaga.nvim")
+	use({ "glepnir/lspsaga.nvim", commit = "aab859641ec21decc0495c54be70d2171d62fd18" })
 	use("MunifTanjim/prettier.nvim")
 	use("b0o/schemastore.nvim")
 	use("ray-x/lsp_signature.nvim")
@@ -189,8 +190,8 @@ return packer.startup(function(use)
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 	use("windwp/nvim-ts-autotag")
 
-  --chatGPT
-  use("jackMort/ChatGPT.nvim")
+	--chatGPT
+	use("jackMort/ChatGPT.nvim")
 
 	-- Git
 	use("lewis6991/gitsigns.nvim")

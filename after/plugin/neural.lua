@@ -5,7 +5,7 @@ end
 
 neural.setup({
 	mappings = {
-		swift = "<C-n>", -- Context completion
+		swift = "<C-p>", -- Context completion
 		prompt = "<C-space>", -- Open prompt
 	},
 	open_ai = {
