@@ -1,9 +1,20 @@
-vim.g.copilot_filetypes = {
-  ["*"] = false,
-}
+local status_ok, copilot = pcall(require, "copilot")
+if not status_ok then
+	return
+end
 
-vim.cmd [[
-  imap <silent><script><expr> <C-A> copilot#Accept("\<CR>")
-  let g:copilot_no_tab_map = v:true
-]]
-
+copilot.setup({
+	panel = { enabled = false },
+	suggestion = { enabled = false },
+	ft_disable = { "markdown" },
+	-- plugin_manager_path = vim.fn.stdpath "data" .. "/site/pack/packer",
+	server_opts_overrides = {
+		trace = "verbose",
+		settings = {
+			advanced = {
+				listCount = 10,
+				inlineSuggestCount = 3, -- #completions for getCompletions
+			},
+		},
+	},
+})

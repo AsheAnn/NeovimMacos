@@ -135,7 +135,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-path"
   },
   ["cmp-tabnine"] = {
-    config = { "\27LJ\2\n∫\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\20max_num_results\3\20\14max_lines\3Ë\a\27run_on_every_keystroke\2\24snippet_placeholder\a..\tsort\2\nsetup\23cmp_tabnine.config\frequire\0" },
+    config = { "\27LJ\2\n∫\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\14max_lines\3Ë\a\24snippet_placeholder\a..\27run_on_every_keystroke\2\20max_num_results\3\20\tsort\2\nsetup\23cmp_tabnine.config\frequire\0" },
     loaded = true,
     path = "/Users/ash/.local/share/nvim/site/pack/packer/start/cmp-tabnine",
     url = "https://github.com/tzachar/cmp-tabnine"
@@ -149,6 +149,19 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ash/.local/share/nvim/site/pack/packer/start/code_runner.nvim",
     url = "https://github.com/CRAG666/code_runner.nvim"
+  },
+  ["copilot-cmp"] = {
+    config = { "\27LJ\2\nä\2\0\0\a\0\r\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\6\0006\4\0\0'\6\4\0B\4\2\0029\4\5\4=\4\a\0036\4\0\0'\6\4\0B\4\2\0029\4\b\4=\4\t\0036\4\0\0'\6\4\0B\4\2\0029\4\n\4=\4\v\3=\3\f\2B\0\2\1K\0\1\0\15formatters\fpreview\rdeindent\16insert_text\23format_insert_text\nlabel\1\0\0\22format_label_text\23copilot_cmp.format\1\0\1\vmethod\26getCompletionsCycling\nsetup\16copilot_cmp\frequire\0" },
+    load_after = {},
+    loaded = true,
+    needs_bufread = false,
+    path = "/Users/ash/.local/share/nvim/site/pack/packer/opt/copilot-cmp",
+    url = "https://github.com/zbirenbaum/copilot-cmp"
+  },
+  ["copilot.lua"] = {
+    loaded = true,
+    path = "/Users/ash/.local/share/nvim/site/pack/packer/start/copilot.lua",
+    url = "https://github.com/zbirenbaum/copilot.lua"
   },
   ["crates.nvim"] = {
     loaded = true,
@@ -266,6 +279,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ash/.local/share/nvim/site/pack/packer/start/neovim-ayu",
     url = "https://github.com/Shatur/neovim-ayu"
+  },
+  neural = {
+    loaded = true,
+    path = "/Users/ash/.local/share/nvim/site/pack/packer/start/neural",
+    url = "https://github.com/dense-analysis/neural"
   },
   ["nui.nvim"] = {
     loaded = true,
@@ -521,14 +539,23 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: cmp-tabnine
-time([[Config for cmp-tabnine]], true)
-try_loadstring("\27LJ\2\n∫\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\20max_num_results\3\20\14max_lines\3Ë\a\27run_on_every_keystroke\2\24snippet_placeholder\a..\tsort\2\nsetup\23cmp_tabnine.config\frequire\0", "config", "cmp-tabnine")
-time([[Config for cmp-tabnine]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\nN\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\bcmd\18TroubleToggle\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
+-- Config for: cmp-tabnine
+time([[Config for cmp-tabnine]], true)
+try_loadstring("\27LJ\2\n∫\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\14max_lines\3Ë\a\24snippet_placeholder\a..\27run_on_every_keystroke\2\20max_num_results\3\20\tsort\2\nsetup\23cmp_tabnine.config\frequire\0", "config", "cmp-tabnine")
+time([[Config for cmp-tabnine]], false)
+-- Load plugins in order defined by `after`
+time([[Sequenced loading]], true)
+vim.cmd [[ packadd copilot.lua ]]
+vim.cmd [[ packadd copilot-cmp ]]
+
+-- Config for: copilot-cmp
+try_loadstring("\27LJ\2\nä\2\0\0\a\0\r\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\6\0006\4\0\0'\6\4\0B\4\2\0029\4\5\4=\4\a\0036\4\0\0'\6\4\0B\4\2\0029\4\b\4=\4\t\0036\4\0\0'\6\4\0B\4\2\0029\4\n\4=\4\v\3=\3\f\2B\0\2\1K\0\1\0\15formatters\fpreview\rdeindent\16insert_text\23format_insert_text\nlabel\1\0\0\22format_label_text\23copilot_cmp.format\1\0\1\vmethod\26getCompletionsCycling\nsetup\16copilot_cmp\frequire\0", "config", "copilot-cmp")
+
+time([[Sequenced loading]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads

@@ -101,6 +101,7 @@ return packer.startup(function(use)
 	})
 
 	-- Colorschemes
+	--[[ use("folke/tokyonight.nvim") ]]
 	use("AsheAnn/tokyonight.nvim")
 	use("olimorris/onedarkpro.nvim")
 	use("overcache/NeoSolarized")
@@ -125,7 +126,7 @@ return packer.startup(function(use)
 	use("Saecki/crates.nvim")
 
 	-- cmp plugins
-	use({ "hrsh7th/nvim-cmp", commit = "b588569" }) -- The completion plugin
+	use("hrsh7th/nvim-cmp") -- The completion plugin
 	use("saadparwaiz1/cmp_luasnip") -- snippet completions
 	use("hrsh7th/cmp-buffer") -- buffer completions
 	use("hrsh7th/cmp-path") -- path completions
@@ -133,6 +134,20 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-nvim-lsp")
 	use("hrsh7th/cmp-emoji")
 	use("hrsh7th/cmp-nvim-lua")
+	use({
+		"zbirenbaum/copilot-cmp",
+		after = { "copilot.lua" },
+		config = function()
+			require("copilot_cmp").setup({
+				method = "getCompletionsCycling",
+				formatters = {
+					label = require("copilot_cmp.format").format_label_text,
+					insert_text = require("copilot_cmp.format").format_insert_text,
+					preview = require("copilot_cmp.format").deindent,
+				},
+			})
+		end,
+	})
 	use({
 		"tzachar/cmp-tabnine",
 		config = function()
@@ -185,13 +200,15 @@ return packer.startup(function(use)
 	use({
 		"nvim-treesitter/nvim-treesitter",
 		commit = "8e76333",
-		run = ":TSUpdate",
+		--[[ run = ":TSUpdate", ]]
 	})
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 	use("windwp/nvim-ts-autotag")
 
-	--chatGPT
+	-- AI
 	use("jackMort/ChatGPT.nvim")
+	use("zbirenbaum/copilot.lua")
+	use("dense-analysis/neural")
 
 	-- Git
 	use("lewis6991/gitsigns.nvim")

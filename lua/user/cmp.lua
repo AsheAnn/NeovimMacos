@@ -12,11 +12,15 @@ require("luasnip/loaders/from_vscode").lazy_load()
 require("luasnip/loaders/from_vscode").lazy_load({ paths = { "./snippets" } })
 require("luasnip").filetype_extend("javascriptreact", { "html" })
 
-
 local check_backspace = function()
 	local col = vim.fn.col(".") - 1
 	return col == 0 or vim.fn.getline("."):sub(col, col):match("%s")
 end
+
+vim.api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = "#3ff51b" })
+vim.api.nvim_set_hl(0, "CmpItemKindTabnine", { fg = "#1cfbff" })
+vim.api.nvim_set_hl(0, "CmpItemKindEmoji", { fg = "#FDE030" })
+vim.api.nvim_set_hl(0, "CmpItemKindCrate", { fg = "#F64D00" })
 
 local icons = require("user.icons")
 
@@ -74,8 +78,15 @@ cmp.setup({
 			vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
 			if entry.source.name == "cmp_tabnine" then
 				vim_item.kind = icons.misc.Robot
+				vim_item.kind_hl_group = "CmpItemKindTabnine"
 			end
+			if entry.source.name == "copilot" then
+				vim_item.kind = icons.git.Octoface
+				vim_item.kind_hl_group = "CmpItemKindCopilot"
+			end
+
 			vim_item.menu = ({
+				copilot = "[CP]",
 				luasnip = "[Snippet]",
 				nvim_lsp = "[LSP]",
 				cmp_tabnine = "[TN]",
@@ -88,6 +99,7 @@ cmp.setup({
 		end,
 	},
 	sources = {
+		{ name = "copilot" },
 		{ name = "luasnip" },
 		{ name = "nvim_lsp" },
 		{ name = "cmp_tabnine" },
