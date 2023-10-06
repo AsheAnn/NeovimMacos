@@ -197,11 +197,7 @@ return packer.startup(function(use)
 	use("tom-anders/telescope-vim-bookmarks.nvim")
 
 	-- Treesitter
-	use({
-		"nvim-treesitter/nvim-treesitter",
-		commit = "8e76333",
-		--[[ run = ":TSUpdate", ]]
-	})
+	use("nvim-treesitter/nvim-treesitter")
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 	use("windwp/nvim-ts-autotag")
 

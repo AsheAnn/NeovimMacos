@@ -8,6 +8,11 @@ if not status_ok_1 then
   return
 end
 
+local l_status_ok, neodev = pcall(require, "neodev")
+if not l_status_ok then
+  return
+end
+
 local servers = {
   "cssls",
   "cssmodules_ls",
@@ -17,7 +22,7 @@ local servers = {
   "solc",
   "solidity",
   "solang",
-  "sumneko_lua",
+  "lua_ls",
   "tailwindcss",
   "tsserver",
   "vuels",
@@ -67,11 +72,7 @@ for _, server in pairs(servers) do
     opts = vim.tbl_deep_extend("force", jsonls_opts, opts)
   end
 
-  if server == "sumneko_lua" then
-    local l_status_ok, neodev = pcall(require, "neodev")
-    if not l_status_ok then
-      return
-    end
+  if server == "lua_ls" then
     -- local sumneko_opts = require "user.lsp.settings.sumneko_lua"
     -- opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
     -- opts = vim.tbl_deep_extend("force", require("lua-dev").setup(), opts)
@@ -82,7 +83,7 @@ for _, server in pairs(servers) do
         --   -- settings = opts.settings,
       },
     }
-    lspconfig.sumneko_lua.setup(luadev)
+    lspconfig.lua_ls.setup(luadev)
     goto continue
 	 	-- local sumneko_opts = require("user.lsp.settings.sumneko_lua")
 	 	-- opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
