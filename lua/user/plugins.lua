@@ -122,8 +122,8 @@ return packer.startup(function(use)
 	use("fatih/vim-go")
 
 	-- rust
-	use({ "christianchiarulli/rust-tools.nvim", branch = "modularize_and_inlay_rewrite" })
 	use("Saecki/crates.nvim")
+  use("simrat39/rust-tools.nvim")
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -140,6 +140,8 @@ return packer.startup(function(use)
 		config = function()
 			require("copilot_cmp").setup({
 				method = "getCompletionsCycling",
+				event = { "InsertEnter", "LspAttach" },
+				fix_pairs = true,
 				formatters = {
 					label = require("copilot_cmp.format").format_label_text,
 					insert_text = require("copilot_cmp.format").format_insert_text,
@@ -164,7 +166,6 @@ return packer.startup(function(use)
 				},
 			})
 		end,
-
 		run = "./install.sh",
 		requires = "hrsh7th/nvim-cmp",
 	})
@@ -204,24 +205,14 @@ return packer.startup(function(use)
 	-- AI
 	use("jackMort/ChatGPT.nvim")
 	use("zbirenbaum/copilot.lua")
-	use("dense-analysis/neural")
 
 	-- Git
 	use("lewis6991/gitsigns.nvim")
 	use("f-person/git-blame.nvim")
 
-	-- take note
-	use("mickael-menu/zk-nvim")
-
 	-- Database
 	use("tpope/vim-dadbod")
 	use("kristijanhusak/vim-dadbod-ui")
-
-	-- DAP
-	-- use "mfussenegger/nvim-dap"
-	-- use "theHamsta/nvim-dap-virtual-text"
-	-- use "rcarriga/nvim-dap-ui"
-	-- use "Pocco81/DAPInstall.nvim"
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

@@ -135,7 +135,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-path"
   },
   ["cmp-tabnine"] = {
-    config = { "\27LJ\2\n∫\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\24snippet_placeholder\a..\27run_on_every_keystroke\2\20max_num_results\3\20\14max_lines\3Ë\a\tsort\2\nsetup\23cmp_tabnine.config\frequire\0" },
+    config = { "\27LJ\2\n∫\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\tsort\2\24snippet_placeholder\a..\27run_on_every_keystroke\2\20max_num_results\3\20\14max_lines\3Ë\a\nsetup\23cmp_tabnine.config\frequire\0" },
     loaded = true,
     path = "/Users/ash/.local/share/nvim/site/pack/packer/start/cmp-tabnine",
     url = "https://github.com/tzachar/cmp-tabnine"
@@ -151,7 +151,7 @@ _G.packer_plugins = {
     url = "https://github.com/CRAG666/code_runner.nvim"
   },
   ["copilot-cmp"] = {
-    config = { "\27LJ\2\nä\2\0\0\a\0\r\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\6\0006\4\0\0'\6\4\0B\4\2\0029\4\5\4=\4\a\0036\4\0\0'\6\4\0B\4\2\0029\4\b\4=\4\t\0036\4\0\0'\6\4\0B\4\2\0029\4\n\4=\4\v\3=\3\f\2B\0\2\1K\0\1\0\15formatters\fpreview\rdeindent\16insert_text\23format_insert_text\nlabel\1\0\0\22format_label_text\23copilot_cmp.format\1\0\1\vmethod\26getCompletionsCycling\nsetup\16copilot_cmp\frequire\0" },
+    config = { "\27LJ\2\nΩ\2\0\0\a\0\15\0\0266\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\b\0006\4\0\0'\6\6\0B\4\2\0029\4\a\4=\4\t\0036\4\0\0'\6\6\0B\4\2\0029\4\n\4=\4\v\0036\4\0\0'\6\6\0B\4\2\0029\4\f\4=\4\r\3=\3\14\2B\0\2\1K\0\1\0\15formatters\fpreview\rdeindent\16insert_text\23format_insert_text\nlabel\1\0\0\22format_label_text\23copilot_cmp.format\nevent\1\3\0\0\16InsertEnter\14LspAttach\1\0\2\vmethod\26getCompletionsCycling\14fix_pairs\2\nsetup\16copilot_cmp\frequire\0" },
     load_after = {},
     loaded = true,
     needs_bufread = false,
@@ -280,11 +280,6 @@ _G.packer_plugins = {
     path = "/Users/ash/.local/share/nvim/site/pack/packer/start/neovim-ayu",
     url = "https://github.com/Shatur/neovim-ayu"
   },
-  neural = {
-    loaded = true,
-    path = "/Users/ash/.local/share/nvim/site/pack/packer/start/neural",
-    url = "https://github.com/dense-analysis/neural"
-  },
   ["nui.nvim"] = {
     loaded = true,
     path = "/Users/ash/.local/share/nvim/site/pack/packer/start/nui.nvim",
@@ -388,7 +383,7 @@ _G.packer_plugins = {
   ["rust-tools.nvim"] = {
     loaded = true,
     path = "/Users/ash/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
-    url = "https://github.com/christianchiarulli/rust-tools.nvim"
+    url = "https://github.com/simrat39/rust-tools.nvim"
   },
   ["schemastore.nvim"] = {
     loaded = true,
@@ -530,30 +525,25 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ash/.local/share/nvim/site/pack/packer/start/zen-mode.nvim",
     url = "https://github.com/folke/zen-mode.nvim"
-  },
-  ["zk-nvim"] = {
-    loaded = true,
-    path = "/Users/ash/.local/share/nvim/site/pack/packer/start/zk-nvim",
-    url = "https://github.com/mickael-menu/zk-nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: cmp-tabnine
+time([[Config for cmp-tabnine]], true)
+try_loadstring("\27LJ\2\n∫\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\tsort\2\24snippet_placeholder\a..\27run_on_every_keystroke\2\20max_num_results\3\20\14max_lines\3Ë\a\nsetup\23cmp_tabnine.config\frequire\0", "config", "cmp-tabnine")
+time([[Config for cmp-tabnine]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\nN\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\bcmd\18TroubleToggle\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
--- Config for: cmp-tabnine
-time([[Config for cmp-tabnine]], true)
-try_loadstring("\27LJ\2\n∫\1\0\0\6\0\5\0\n6\0\0\0'\2\1\0B\0\2\2\18\3\0\0009\1\2\0005\4\3\0004\5\0\0=\5\4\4B\1\3\1K\0\1\0\23ignored_file_types\1\0\5\24snippet_placeholder\a..\27run_on_every_keystroke\2\20max_num_results\3\20\14max_lines\3Ë\a\tsort\2\nsetup\23cmp_tabnine.config\frequire\0", "config", "cmp-tabnine")
-time([[Config for cmp-tabnine]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd copilot.lua ]]
 vim.cmd [[ packadd copilot-cmp ]]
 
 -- Config for: copilot-cmp
-try_loadstring("\27LJ\2\nä\2\0\0\a\0\r\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\6\0006\4\0\0'\6\4\0B\4\2\0029\4\5\4=\4\a\0036\4\0\0'\6\4\0B\4\2\0029\4\b\4=\4\t\0036\4\0\0'\6\4\0B\4\2\0029\4\n\4=\4\v\3=\3\f\2B\0\2\1K\0\1\0\15formatters\fpreview\rdeindent\16insert_text\23format_insert_text\nlabel\1\0\0\22format_label_text\23copilot_cmp.format\1\0\1\vmethod\26getCompletionsCycling\nsetup\16copilot_cmp\frequire\0", "config", "copilot-cmp")
+try_loadstring("\27LJ\2\nΩ\2\0\0\a\0\15\0\0266\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\b\0006\4\0\0'\6\6\0B\4\2\0029\4\a\4=\4\t\0036\4\0\0'\6\6\0B\4\2\0029\4\n\4=\4\v\0036\4\0\0'\6\6\0B\4\2\0029\4\f\4=\4\r\3=\3\14\2B\0\2\1K\0\1\0\15formatters\fpreview\rdeindent\16insert_text\23format_insert_text\nlabel\1\0\0\22format_label_text\23copilot_cmp.format\nevent\1\3\0\0\16InsertEnter\14LspAttach\1\0\2\vmethod\26getCompletionsCycling\14fix_pairs\2\nsetup\16copilot_cmp\frequire\0", "config", "copilot-cmp")
 
 time([[Sequenced loading]], false)
 vim.cmd [[augroup packer_load_aucmds]]
